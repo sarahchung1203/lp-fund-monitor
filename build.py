@@ -134,15 +134,13 @@ TEMPLATE = r"""<!DOCTYPE html>
   body{margin:0;background:var(--bg);color:var(--text);
        font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
        -webkit-text-size-adjust:100%}
-  header{background:linear-gradient(135deg,#16304f 0%,#244b78 100%);color:#fff;
-         padding:16px 16px 15px;border-bottom:3px solid var(--new)}
-  .brand{display:flex;align-items:center;gap:11px;margin-bottom:12px}
-  .brand .swoosh{flex:none}
-  .wordmark{line-height:1.03;font-family:Georgia,"Times New Roman",serif;letter-spacing:.3px}
-  .wordmark .w1{display:block;font-size:17px;color:#a8c5e6;font-weight:600}
-  .wordmark .w2{display:block;font-size:17px;color:#ffffff;font-weight:700}
-  header h1{margin:0;font-size:18px;font-weight:700;letter-spacing:-.2px}
-  header .sub{margin-top:5px;font-size:12px;color:#bcd0e8}
+  header{background:#ffffff;color:var(--navy);padding:13px 16px;
+         border-bottom:2px solid var(--navy)}
+  .brand-row{display:flex;align-items:center;gap:15px;max-width:980px;margin:0 auto}
+  .logo{height:60px;width:auto;display:block;flex:none}
+  .htitle{border-left:1px solid var(--line);padding-left:15px}
+  header h1{margin:0;font-size:18px;font-weight:700;color:var(--navy);letter-spacing:-.2px}
+  header .sub{margin-top:4px;font-size:12px;color:var(--muted)}
   .wrap{max-width:980px;margin:0 auto;padding:14px 12px 60px}
   .toolbar{position:sticky;top:0;z-index:5;background:var(--bg);
            padding:10px 0 8px;margin-bottom:6px}
@@ -181,20 +179,21 @@ TEMPLATE = r"""<!DOCTYPE html>
   @media (max-width:520px){
     .title{font-size:14.5px}
     .date{margin-left:0;width:100%;order:9}
+    .logo{height:48px}
+    header h1{font-size:16px}
+    .htitle{padding-left:12px}
   }
 </style>
 </head>
 <body>
 <header>
-  <div class="brand">
-    <svg class="swoosh" viewBox="0 0 60 40" width="52" height="35" aria-hidden="true">
-      <path d="M5 35 C 24 6, 42 3, 57 9" fill="none" stroke="#7fa6cf" stroke-width="5.5" stroke-linecap="round"/>
-      <path d="M5 35 C 22 15, 40 10, 55 13" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".6"/>
-    </svg>
-    <div class="wordmark"><span class="w1">Premier</span><span class="w2">Partners</span></div>
+  <div class="brand-row">
+    <img class="logo" src="logo.jpg" alt="Premier Partners">
+    <div class="htitle">
+      <h1>LP 출자사업 공고 모니터링</h1>
+      <div class="sub" id="hsub"></div>
+    </div>
   </div>
-  <h1>LP 출자사업 공고 모니터링</h1>
-  <div class="sub" id="hsub"></div>
 </header>
 <div class="wrap">
   <div class="toolbar">
