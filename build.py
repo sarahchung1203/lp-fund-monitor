@@ -25,11 +25,11 @@ NEW_DAYS = 3  # 처음 수집된 뒤 며칠 동안 NEW 배지를 유지할지
 
 SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan"]
 SOURCE_COLORS = {
-    "kvic": "#2563eb",
-    "kgrowth": "#0891b2",
-    "kvca": "#7c3aed",
-    "kfcc": "#dc2626",
-    "shinhan": "#ea580c",
+    "kvic": "#1c3c63",     # 네이비 (Premier Partners 메인)
+    "kgrowth": "#2f6fa5",  # 애저 블루
+    "kvca": "#5a6bb0",     # 인디고
+    "kfcc": "#2f8f7a",     # 틸 ([펀드]/[운용사] 소스)
+    "shinhan": "#7d5ba6",  # 퍼플
 }
 
 
@@ -126,17 +126,23 @@ TEMPLATE = r"""<!DOCTYPE html>
 <title>LP 출자사업 공고 모니터링</title>
 <style>
   :root{
-    --bg:#f4f6f9; --card:#ffffff; --line:#e6e9ef; --text:#1f2733;
-    --muted:#6b7480; --accent:#2563eb; --new:#16a34a; --newbg:#e7f7ec;
+    --bg:#eef2f7; --card:#ffffff; --line:#dde4ee; --text:#1f2b3a;
+    --muted:#67748a; --navy:#1c3c63; --accent:#2f6fa5;
+    --new:#a9791f; --newbg:#f7eed6;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);
        font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
        -webkit-text-size-adjust:100%}
-  header{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;
-         padding:18px 16px 14px}
-  header h1{margin:0;font-size:19px;font-weight:700}
-  header .sub{margin-top:4px;font-size:12px;opacity:.85}
+  header{background:linear-gradient(135deg,#16304f 0%,#244b78 100%);color:#fff;
+         padding:16px 16px 15px;border-bottom:3px solid var(--new)}
+  .brand{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+  .brand .swoosh{flex:none}
+  .wordmark{line-height:1.03;font-family:Georgia,"Times New Roman",serif;letter-spacing:.3px}
+  .wordmark .w1{display:block;font-size:17px;color:#a8c5e6;font-weight:600}
+  .wordmark .w2{display:block;font-size:17px;color:#ffffff;font-weight:700}
+  header h1{margin:0;font-size:18px;font-weight:700;letter-spacing:-.2px}
+  header .sub{margin-top:5px;font-size:12px;color:#bcd0e8}
   .wrap{max-width:980px;margin:0 auto;padding:14px 12px 60px}
   .toolbar{position:sticky;top:0;z-index:5;background:var(--bg);
            padding:10px 0 8px;margin-bottom:6px}
@@ -163,7 +169,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   .meta-row{display:flex;align-items:center;gap:7px;margin-bottom:6px;flex-wrap:wrap}
   .badge{font-size:11px;font-weight:700;color:#fff;padding:2px 8px;border-radius:6px}
   .newtag{font-size:10px;font-weight:700;color:var(--new);background:var(--newbg);
-          padding:2px 7px;border-radius:6px;border:1px solid #bfe9cb}
+          padding:2px 7px;border-radius:6px;border:1px solid #e3cf9c}
   .date{font-size:12px;color:var(--muted);margin-left:auto}
   .title{font-size:15px;font-weight:600;line-height:1.45;word-break:keep-all}
   .sub-row{margin-top:6px;font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
@@ -180,7 +186,14 @@ TEMPLATE = r"""<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <h1>📋 LP 출자사업 공고 모니터링</h1>
+  <div class="brand">
+    <svg class="swoosh" viewBox="0 0 60 40" width="52" height="35" aria-hidden="true">
+      <path d="M5 35 C 24 6, 42 3, 57 9" fill="none" stroke="#7fa6cf" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M5 35 C 22 15, 40 10, 55 13" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+    </svg>
+    <div class="wordmark"><span class="w1">Premier</span><span class="w2">Partners</span></div>
+  </div>
+  <h1>LP 출자사업 공고 모니터링</h1>
   <div class="sub" id="hsub"></div>
 </header>
 <div class="wrap">
@@ -223,7 +236,7 @@ const chipBox = document.getElementById("chips");
 function makeChip(code,label){
   const el=document.createElement("div"); el.className="chip"; el.dataset.code=code;
   el.innerHTML = `${label}<span class="cnt">${counts[code]||0}</span>`;
-  if(code===activeSource){el.classList.add("active"); el.style.background=code==="all"?"#1f2733":COLORS[code];}
+  if(code===activeSource){el.classList.add("active"); el.style.background=code==="all"?"#1f3a5f":COLORS[code];}
   el.onclick=()=>{activeSource=code; refreshChips(); render();};
   return el;
 }
