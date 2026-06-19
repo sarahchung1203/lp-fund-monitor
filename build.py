@@ -14,7 +14,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import scrapers
-from scrapers import SCRAPERS, SOURCE_NAMES
+from scrapers import SCRAPERS, SOURCE_NAMES, attachment_deadline
 
 ROOT = Path(__file__).resolve().parent
 STATE_FILE = ROOT / "state.json"
@@ -71,6 +71,21 @@ def main():
                                   "count": 0, "ok": False, "error": str(e)})
             print(f"[FAIL] {code}: {e}")
             traceback.print_exc()
+
+    # 첨부 PDF에서 마감일 보강 (K-Growth/신한). 결과는 캐시 → 매일 새 항목만 다운로드.
+    dcache = state.setdefault("deadline_cache", {})
+    tried = 0
+    for it in all_items:
+        if it.get("deadline") or it["source"] not in ("kgrowth", "shinhan"):
+            continue
+        uid = f"{it['source']}:{it['id']}"
+        if uid in dcache:
+            it["deadline"] = dcache[uid]
+        else:
+            it["deadline"] = dcache[uid] = attachment_deadline(it["source"], it["id"], it.get("date", ""))
+            tried += 1
+    if tried:
+        print(f"첨부 마감일 추출 시도: {tried}건 (신규)")
 
     # 신규 여부 계산
     new_count = 0

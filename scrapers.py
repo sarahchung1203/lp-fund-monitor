@@ -16,6 +16,12 @@ LP 출자사업 공고 수집기 (scrapers)
 import re
 import requests
 from bs4 import BeautifulSoup
+from datetime import date, timedelta
+
+try:
+    import fitz  # PyMuPDF — 첨부 PDF에서 마감일 추출용
+except Exception:
+    fitz = None
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
@@ -268,6 +274,121 @@ def scrape_shinhan(pages=2):
                 "url": view + gid,
             })
     return out
+
+
+# ============================================================================
+# 첨부파일(PDF)에서 마감일(제안서 접수 마감) 추출
+#   - K-Growth, 신한벤처투자: 공고문이 PDF (숫자 정상 추출됨)
+#   - KVIC: 공고문 PDF의 숫자가 깨진 폰트로 추출 불가 → 시도하지 않음
+#   - 잘못된 마감 표시를 막기 위해 '그럴듯한 날짜'(공고일~약5개월)만 채택
+# ============================================================================
+_DATE_RE = r"['‘’]?\s*\d{2,4}\s*[.년]\s*\d{1,2}\s*[.월]\s*\d{1,2}"
+# 일정 표(선정일정/추진일정 등) 안에서 '제안서 접수' 행의 날짜만 채택 → 오탐 방지
+_SCHED_ANCHOR = re.compile(r"선정\s*일정|추진\s*일정|향후\s*일정|주요\s*일정|평가\s*일정|진행\s*일정|모집\s*일정")
+_SUBMIT_LABEL = re.compile(r"제안서\s*접수|서류\s*접수|접수\s*마감|제안서\s*제출|접수\s*기간")
+
+
+def _flex_date(tok):
+    """'26. 7. 8 / 2026. 7. 8 / 2026년 7월 8일 -> 2026-07-08"""
+    m = re.search(r"['‘’]?\s*(\d{2,4})\s*[.년]\s*(\d{1,2})\s*[.월]\s*(\d{1,2})", tok)
+    if not m:
+        return ""
+    y, mo, d = m.groups()
+    y = int(y)
+    y = y + 2000 if y < 100 else y
+    try:
+        date(y, int(mo), int(d))
+    except ValueError:
+        return ""
+    return f"{y}-{int(mo):02d}-{int(d):02d}"
+
+
+def _plausible(d, ann_date):
+    """마감일이 공고일(ann_date) 기준 -7일 ~ +150일 이내면 채택."""
+    try:
+        dd = date.fromisoformat(d)
+    except ValueError:
+        return False
+    if not ann_date:
+        return 2025 <= dd.year <= 2027
+    try:
+        aa = date.fromisoformat(ann_date)
+    except ValueError:
+        return 2025 <= dd.year <= 2027
+    return aa - timedelta(days=7) <= dd <= aa + timedelta(days=150)
+
+
+def _deadline_from_pdf_text(full, ann_date):
+    """일정 표 안의 '제안서 접수' 행에서 마감일을 추출. (공고일/기준일 등 오탐 제외)"""
+    full = re.sub(r"[ \t]+", " ", full or "")
+    for am in _SCHED_ANCHOR.finditer(full):          # 일정 섹션만 탐색
+        sec = full[am.start(): am.start() + 700]
+        for lm in _SUBMIT_LABEL.finditer(sec):
+            win = sec[max(0, lm.start() - 30): lm.end() + 30]
+            for tok in re.findall(_DATE_RE, win):
+                d = _flex_date(tok)
+                if d and d != ann_date and _plausible(d, ann_date):
+                    return d
+    return ""
+
+
+def _pdf_text(content):
+    if not (fitz and content[:4] == b"%PDF"):
+        return ""
+    try:
+        doc = fitz.open(stream=content, filetype="pdf")
+        return "".join(pg.get_text() for pg in doc)
+    except Exception:
+        return ""
+
+
+def _kgrowth_pdfs(idx):
+    """K-Growth 첨부 다운로드(세션 필요 — 직접 접근 차단)."""
+    s = requests.Session()
+    s.headers.update(HEADERS)
+    s.get("https://www.kgrowth.or.kr/notice.asp?str_type=1&tab=1", timeout=TIMEOUT)
+    ref = f"https://www.kgrowth.or.kr/notice_view.asp?idx={idx}&str_type=1&tab=1"
+    s.get(ref, timeout=TIMEOUT)
+    for sel in ("Notice1", "Notice2", "Notice3"):
+        try:
+            c = s.get(f"https://www.kgrowth.or.kr/down_file.asp?idx={idx}&SelType={sel}",
+                      headers={"Referer": ref}, timeout=60).content
+            if c[:4] == b"%PDF":
+                yield c
+        except Exception:
+            continue
+
+
+def _shinhan_pdfs(no):
+    """신한벤처 상세 페이지의 /file/download/* 중 PDF 첨부."""
+    try:
+        html = _get(f"https://www.shinhanfund.com/ko/pc/board/noticeView?no={no}").text
+    except Exception:
+        return
+    for fid in dict.fromkeys(re.findall(r"/file/download/(\d+)", html)):
+        try:
+            c = _get(f"https://www.shinhanfund.com/file/download/{fid}").content
+            if c[:4] == b"%PDF":
+                yield c
+        except Exception:
+            continue
+
+
+def attachment_deadline(source, gid, ann_date=""):
+    """공고 첨부(PDF)에서 마감일을 추출. 못 찾으면 '' (오탐 방지)."""
+    if not fitz:
+        return ""
+    try:
+        gens = {"kgrowth": _kgrowth_pdfs, "shinhan": _shinhan_pdfs}.get(source)
+        if not gens:
+            return ""
+        for content in gens(gid):
+            d = _deadline_from_pdf_text(_pdf_text(content), ann_date)
+            if d:
+                return d
+    except Exception:
+        return ""
+    return ""
 
 
 SCRAPERS = {
