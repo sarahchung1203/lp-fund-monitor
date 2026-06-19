@@ -207,6 +207,17 @@ TEMPLATE = r"""<!DOCTYPE html>
   .opts{display:flex;align-items:center;gap:14px;margin-top:9px;font-size:13px;
         color:var(--muted);flex-wrap:wrap}
   .opts label{display:flex;align-items:center;gap:5px;cursor:pointer}
+  .viewtoggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+  .viewtoggle button{border:none;background:#fff;color:var(--muted);padding:6px 11px;
+                     font-size:13px;cursor:pointer;font-family:inherit}
+  .viewtoggle button.on{background:var(--navy);color:#fff;font-weight:600}
+  .group{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+  .group:first-child{margin-top:2px}
+  .group-head{display:flex;align-items:center;gap:9px;padding:9px 12px;border-radius:9px;
+              background:#e7edf5;border-left:5px solid var(--navy)}
+  .group-dot{width:11px;height:11px;border-radius:3px;flex:none}
+  .group-title{font-size:15px;font-weight:700;color:var(--navy)}
+  .group-count{font-size:12px;color:var(--muted);margin-left:auto}
   .summary{font-size:12px;color:var(--muted);margin:2px 2px 10px}
   .summary b{color:var(--new)}
   .list{display:flex;flex-direction:column;gap:8px}
@@ -256,6 +267,10 @@ TEMPLATE = r"""<!DOCTYPE html>
     <input class="search" id="q" placeholder="제목·기관 검색…" autocomplete="off">
     <div class="chips" id="chips"></div>
     <div class="opts">
+      <div class="viewtoggle" id="viewtoggle">
+        <button data-view="inst" class="on">🏢 기관별</button>
+        <button data-view="date">📅 날짜순</button>
+      </div>
       <label><input type="checkbox" id="newonly"> 신규만 보기</label>
       <label><input type="checkbox" id="hideclosed"> 마감 제외</label>
     </div>
@@ -273,7 +288,7 @@ const COLORS  = /*__COLORS__*/;
 const ORDER   = /*__ORDER__*/;
 const NAMES   = /*__NAMES__*/;
 const items = PAYLOAD.items, meta = PAYLOAD.meta;
-let activeSource = "all", query = "", newOnly = false, hideClosed = false;
+let activeSource = "all", query = "", newOnly = false, hideClosed = false, groupBy = "inst";
 
 document.getElementById("hsub").textContent =
    `최종 업데이트 ${meta.generated_at} · 전체 ${meta.total}건 · 신규 ${meta.new_count}건`;
@@ -309,8 +324,32 @@ refreshChips();
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render();});
 document.getElementById("newonly").addEventListener("change",e=>{newOnly=e.target.checked;render();});
 document.getElementById("hideclosed").addEventListener("change",e=>{hideClosed=e.target.checked;render();});
+document.querySelectorAll('#viewtoggle button').forEach(b=>{
+  b.addEventListener("click",()=>{
+    groupBy=b.dataset.view;
+    document.querySelectorAll('#viewtoggle button').forEach(x=>x.classList.toggle("on", x===b));
+    render();
+  });
+});
 
 function esc(s){return (s||"").replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
+
+function itemHTML(i){
+  const c=COLORS[i.source]||"#666";
+  return `<a class="item ${i.is_new?'new':''} ${i.is_closed?'closed':''}" href="${i.url}" target="_blank" rel="noopener">
+      <div class="meta-row">
+        <span class="badge" style="background:${c}">${esc(i.source_name)}</span>
+        ${i.is_new?'<span class="newtag">NEW</span>':''}
+        ${i.is_closed?'<span class="closedtag">마감</span>':''}
+        <span class="date">${i.date||'-'}</span>
+      </div>
+      <div class="title">${esc(i.title)}</div>
+      ${(i.org||i.deadline)?`<div class="sub-row">
+          ${i.org?`<span>🏢 ${esc(i.org)}</span>`:''}
+          ${i.deadline?`<span class="ddl ${i.is_closed?'done':''}">⏰ 마감 ${i.deadline}</span>`:''}
+      </div>`:''}
+    </a>`;
+}
 
 function render(){
   let rows = items.filter(i=>{
@@ -330,22 +369,26 @@ function render(){
      `표시 ${rows.length}건`
      + (rows.filter(r=>r.is_new).length? ` · <b>신규 ${rows.filter(r=>r.is_new).length}건</b>`:"")
      + (nClosed? ` · 마감 ${nClosed}건`:"");
-  list.innerHTML = rows.map(i=>{
-    const c=COLORS[i.source]||"#666";
-    return `<a class="item ${i.is_new?'new':''} ${i.is_closed?'closed':''}" href="${i.url}" target="_blank" rel="noopener">
-      <div class="meta-row">
-        <span class="badge" style="background:${c}">${esc(i.source_name)}</span>
-        ${i.is_new?'<span class="newtag">NEW</span>':''}
-        ${i.is_closed?'<span class="closedtag">마감</span>':''}
-        <span class="date">${i.date||'-'}</span>
-      </div>
-      <div class="title">${esc(i.title)}</div>
-      ${(i.org||i.deadline)?`<div class="sub-row">
-          ${i.org?`<span>🏢 ${esc(i.org)}</span>`:''}
-          ${i.deadline?`<span class="ddl ${i.is_closed?'done':''}">⏰ 마감 ${i.deadline}</span>`:''}
-      </div>`:''}
-    </a>`;
-  }).join("");
+  if(groupBy==="inst"){
+    let html="";
+    ORDER.forEach(code=>{
+      const g=rows.filter(r=>r.source===code);
+      if(!g.length) return;
+      const col=COLORS[code]||"#666";
+      const nn=g.filter(r=>r.is_new).length, nc=g.filter(r=>r.is_closed).length;
+      html += `<div class="group">
+        <div class="group-head" style="border-left-color:${col}">
+          <span class="group-dot" style="background:${col}"></span>
+          <span class="group-title">${NAMES[code]}</span>
+          <span class="group-count">${g.length}건${nn?` · 신규 ${nn}`:""}${nc?` · 마감 ${nc}`:""}</span>
+        </div>
+        ${g.map(itemHTML).join("")}
+      </div>`;
+    });
+    list.innerHTML = html;
+  } else {
+    list.innerHTML = rows.map(itemHTML).join("");
+  }
 }
 render();
 </script>
