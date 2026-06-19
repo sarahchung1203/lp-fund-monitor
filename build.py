@@ -10,7 +10,7 @@ LP 출자사업 공고 모니터링 — 빌드 스크립트
 import json
 import sys
 import traceback
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import scrapers
@@ -48,7 +48,9 @@ def save_state(state):
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
-    today = date.today()
+    KST = timezone(timedelta(hours=9))           # 한국 시간 기준(클라우드는 UTC라 보정 필요)
+    now = datetime.now(KST)
+    today = now.date()
     today_str = today.isoformat()
     state = load_state()
     first_seen = state.setdefault("first_seen", {})
@@ -72,6 +74,7 @@ def main():
 
     # 신규 여부 계산
     new_count = 0
+    closed_count = 0
     cutoff = today - timedelta(days=NEW_DAYS)
     for it in all_items:
         uid = f"{it['source']}:{it['id']}"
@@ -85,17 +88,23 @@ def main():
         it["is_new"] = fs >= cutoff
         if it["is_new"]:
             new_count += 1
+        # 마감일이 오늘(KST)보다 이전이면 '마감' 처리 (ISO 날짜라 문자열 비교 = 날짜 비교)
+        dl = it.get("deadline") or ""
+        it["is_closed"] = bool(dl and dl < today_str)
+        if it["is_closed"]:
+            closed_count += 1
         it["source_name"] = SOURCE_NAMES[it["source"]]
 
     # 정렬: 등록일 내림차순, 그 다음 최초수집일 내림차순
     all_items.sort(key=lambda x: (x.get("date") or "", x.get("first_seen") or ""), reverse=True)
 
     meta = {
-        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "generated_at": now.strftime("%Y-%m-%d %H:%M") + " KST",
         "today": today_str,
         "new_days": NEW_DAYS,
         "total": len(all_items),
         "new_count": new_count,
+        "closed_count": closed_count,
         "sources": source_status,
     }
 
@@ -164,6 +173,11 @@ TEMPLATE = r"""<!DOCTYPE html>
         transition:.12s;position:relative}
   .item:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(37,99,235,.08)}
   .item.new{border-left:4px solid var(--new)}
+  .item.closed{opacity:.45}
+  .item.closed:hover{opacity:.9}
+  .closedtag{font-size:10px;font-weight:700;color:#fff;background:#94a0ad;
+             padding:2px 7px;border-radius:6px}
+  .sub-row .ddl.done{color:#8a93a0;font-weight:600;text-decoration:line-through}
   .meta-row{display:flex;align-items:center;gap:7px;margin-bottom:6px;flex-wrap:wrap}
   .badge{font-size:11px;font-weight:700;color:#fff;padding:2px 8px;border-radius:6px}
   .newtag{font-size:10px;font-weight:700;color:var(--new);background:var(--newbg);
@@ -201,6 +215,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <div class="chips" id="chips"></div>
     <div class="opts">
       <label><input type="checkbox" id="newonly"> 신규만 보기</label>
+      <label><input type="checkbox" id="hideclosed"> 마감 제외</label>
     </div>
   </div>
   <div class="summary" id="summary"></div>
@@ -216,7 +231,7 @@ const COLORS  = /*__COLORS__*/;
 const ORDER   = /*__ORDER__*/;
 const NAMES   = /*__NAMES__*/;
 const items = PAYLOAD.items, meta = PAYLOAD.meta;
-let activeSource = "all", query = "", newOnly = false;
+let activeSource = "all", query = "", newOnly = false, hideClosed = false;
 
 document.getElementById("hsub").textContent =
    `최종 업데이트 ${meta.generated_at} · 전체 ${meta.total}건 · 신규 ${meta.new_count}건`;
@@ -248,6 +263,7 @@ refreshChips();
 
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render();});
 document.getElementById("newonly").addEventListener("change",e=>{newOnly=e.target.checked;render();});
+document.getElementById("hideclosed").addEventListener("change",e=>{hideClosed=e.target.checked;render();});
 
 function esc(s){return (s||"").replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
 
@@ -255,6 +271,7 @@ function render(){
   let rows = items.filter(i=>{
     if(activeSource!=="all" && i.source!==activeSource) return false;
     if(newOnly && !i.is_new) return false;
+    if(hideClosed && i.is_closed) return false;
     if(query){
       const hay=(i.title+" "+(i.org||"")+" "+i.source_name).toLowerCase();
       if(!hay.includes(query)) return false;
@@ -263,20 +280,24 @@ function render(){
   });
   const list=document.getElementById("list");
   document.getElementById("empty").style.display = rows.length? "none":"block";
+  const nClosed = rows.filter(r=>r.is_closed).length;
   document.getElementById("summary").innerHTML =
-     `표시 ${rows.length}건` + (rows.filter(r=>r.is_new).length? ` · <b>신규 ${rows.filter(r=>r.is_new).length}건</b>`:"");
+     `표시 ${rows.length}건`
+     + (rows.filter(r=>r.is_new).length? ` · <b>신규 ${rows.filter(r=>r.is_new).length}건</b>`:"")
+     + (nClosed? ` · 마감 ${nClosed}건`:"");
   list.innerHTML = rows.map(i=>{
     const c=COLORS[i.source]||"#666";
-    return `<a class="item ${i.is_new?'new':''}" href="${i.url}" target="_blank" rel="noopener">
+    return `<a class="item ${i.is_new?'new':''} ${i.is_closed?'closed':''}" href="${i.url}" target="_blank" rel="noopener">
       <div class="meta-row">
         <span class="badge" style="background:${c}">${esc(i.source_name)}</span>
         ${i.is_new?'<span class="newtag">NEW</span>':''}
+        ${i.is_closed?'<span class="closedtag">마감</span>':''}
         <span class="date">${i.date||'-'}</span>
       </div>
       <div class="title">${esc(i.title)}</div>
       ${(i.org||i.deadline)?`<div class="sub-row">
           ${i.org?`<span>🏢 ${esc(i.org)}</span>`:''}
-          ${i.deadline?`<span class="ddl">⏰ 마감 ${i.deadline}</span>`:''}
+          ${i.deadline?`<span class="ddl ${i.is_closed?'done':''}">⏰ 마감 ${i.deadline}</span>`:''}
       </div>`:''}
     </a>`;
   }).join("");
