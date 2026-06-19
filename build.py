@@ -9,6 +9,7 @@ LP 출자사업 공고 모니터링 — 빌드 스크립트
 """
 import json
 import sys
+import time
 import traceback
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -46,6 +47,13 @@ def save_state(state):
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def _short_err(e):
+    e = str(e)
+    if any(k in e for k in ("timed out", "ConnectTimeout", "Max retries", "ConnectionError", "ReadTimeout")):
+        return "연결 시간 초과"
+    return e[:80]
+
+
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     KST = timezone(timedelta(hours=9))           # 한국 시간 기준(클라우드는 UTC라 보정 필요)
@@ -55,22 +63,41 @@ def main():
     state = load_state()
     first_seen = state.setdefault("first_seen", {})
 
+    # 직전 수집 결과(이월용): 이번에 실패한 소스는 이전 데이터를 유지해 빈 화면 방지
+    prev_by_source = {}
+    if DATA_FILE.exists():
+        try:
+            for it in json.loads(DATA_FILE.read_text(encoding="utf-8")).get("items", []):
+                prev_by_source.setdefault(it.get("source"), []).append(it)
+        except Exception:
+            pass
+
     all_items = []
     source_status = []
 
     for code in SOURCE_ORDER:
         fn = SCRAPERS[code]
-        try:
-            items = fn()
+        items, err = None, ""
+        for attempt in range(3):                      # 소스 단위 재시도(HTTP 재시도와 별개)
+            try:
+                items = fn()
+                break
+            except Exception as e:
+                err = str(e)
+                print(f"[retry {attempt + 1}/3] {code}: {e}")
+                time.sleep(3 * (attempt + 1))
+        if items is not None:
             source_status.append({"code": code, "name": SOURCE_NAMES[code],
-                                  "count": len(items), "ok": True, "error": ""})
+                                  "count": len(items), "ok": True, "error": "", "carried": 0})
             all_items.extend(items)
             print(f"[OK] {code}: {len(items)}건")
-        except Exception as e:
+        else:
+            carried = prev_by_source.get(code, [])    # 실패 → 직전 수집분 유지
             source_status.append({"code": code, "name": SOURCE_NAMES[code],
-                                  "count": 0, "ok": False, "error": str(e)})
-            print(f"[FAIL] {code}: {e}")
-            traceback.print_exc()
+                                  "count": len(carried), "ok": False,
+                                  "error": _short_err(err), "carried": len(carried)})
+            all_items.extend(carried)
+            print(f"[FAIL] {code}: {err} — 이전 {len(carried)}건 유지")
 
     # 첨부 PDF에서 마감일 보강 (K-Growth/신한). 결과는 캐시 → 매일 새 항목만 다운로드.
     dcache = state.setdefault("deadline_cache", {})
@@ -255,7 +282,10 @@ document.getElementById("hsub").textContent =
 const errBox = document.getElementById("errors");
 meta.sources.filter(s=>!s.ok).forEach(s=>{
   const d=document.createElement("div"); d.className="err";
-  d.textContent=`⚠ ${s.name} 수집 실패 (${s.error})`; errBox.appendChild(d);
+  d.textContent = s.carried
+    ? `⚠ ${s.name} 일시적 수집 실패 — 직전 수집분 ${s.carried}건 표시 중`
+    : `⚠ ${s.name} 수집 실패 (${s.error})`;
+  errBox.appendChild(d);
 });
 
 // 칩(필터) 생성

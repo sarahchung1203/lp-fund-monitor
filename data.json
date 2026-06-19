@@ -1,6 +1,10 @@
 {
  "meta": {
+<<<<<<< Updated upstream
   "generated_at": "2026-06-19 14:38 KST",
+=======
+  "generated_at": "2026-06-19 15:02 KST",
+>>>>>>> Stashed changes
   "today": "2026-06-19",
   "new_days": 3,
   "total": 44,
@@ -10,37 +14,54 @@
    {
     "code": "kvic",
     "name": "한국벤처투자(모태펀드)",
+<<<<<<< Updated upstream
     "count": 0,
     "ok": false,
     "error": "HTTPSConnectionPool(host='www.kvic.or.kr', port=443): Max retries exceeded with url: /notice/kvic-notice/investment-business-notice?page=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kvic.or.kr', port=443) at 0x7fe32a784e00>, 'Connection to www.kvic.or.kr timed out. (connect timeout=30)'))"
+=======
+    "count": 20,
+    "ok": true,
+    "error": "",
+    "carried": 0
+>>>>>>> Stashed changes
    },
    {
     "code": "kgrowth",
     "name": "한국성장금융",
     "count": 22,
     "ok": true,
-    "error": ""
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kvca",
     "name": "벤처캐피탈협회",
     "count": 20,
     "ok": true,
-    "error": ""
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kfcc",
     "name": "새마을금고중앙회",
     "count": 2,
     "ok": true,
-    "error": ""
+    "error": "",
+    "carried": 0
    },
    {
     "code": "shinhan",
     "name": "신한벤처투자",
+<<<<<<< Updated upstream
     "count": 0,
     "ok": false,
     "error": "HTTPSConnectionPool(host='www.shinhanfund.com', port=443): Max retries exceeded with url: /api/board/notice?pageNo=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.shinhanfund.com', port=443) at 0x7fe32912ab70>, 'Connection to www.shinhanfund.com timed out. (connect timeout=30)'))"
+=======
+    "count": 10,
+    "ok": true,
+    "error": "",
+    "carried": 0
+>>>>>>> Stashed changes
    }
   ]
  },

@@ -26,7 +26,16 @@ except Exception:
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 HEADERS = {"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9"}
-TIMEOUT = 30
+TIMEOUT = (10, 30)            # (connect, read) — 일부 한국 사이트가 해외 IP에 느림
+
+# 연결 실패/타임아웃 시 자동 재시도(백오프). 클라우드(해외 IP)의 간헐적 타임아웃 완화.
+from requests.adapters import HTTPAdapter
+try:
+    from urllib3.util.retry import Retry
+    _RETRY = Retry(total=4, connect=4, read=3, backoff_factor=1.3,
+                   status_forcelist=[429, 500, 502, 503, 504])
+except Exception:
+    _RETRY = None
 
 SOURCE_NAMES = {
     "kvic": "한국벤처투자(모태펀드)",
@@ -37,8 +46,22 @@ SOURCE_NAMES = {
 }
 
 
+def _new_session():
+    s = requests.Session()
+    s.headers.update(HEADERS)
+    if _RETRY is not None:
+        ad = HTTPAdapter(max_retries=_RETRY)
+        s.mount("https://", ad)
+        s.mount("http://", ad)
+    return s
+
+
+_SESSION = _new_session()
+
+
 def _get(url, **kw):
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, **kw)
+    kw.setdefault("timeout", TIMEOUT)
+    r = _SESSION.get(url, **kw)
     r.raise_for_status()
     return r
 
