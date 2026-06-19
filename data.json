@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-19 09:34 KST",
+  "generated_at": "2026-06-19 09:42 KST",
   "today": "2026-06-19",
   "new_days": 3,
   "total": 74,
   "new_count": 74,
-  "closed_count": 13,
+  "closed_count": 15,
   "sources": [
    {
     "code": "kvic",
@@ -986,12 +986,12 @@
    "id": "436",
    "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
    "date": "2025-04-30",
-   "deadline": "",
+   "deadline": "2025-05-14",
    "org": "",
    "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=436",
    "first_seen": "2026-06-18",
    "is_new": true,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "새마을금고중앙회"
   },
   {
@@ -999,12 +999,12 @@
    "id": "432",
    "title": "2025년 새마을금고중앙회 국내지분증권 간접투자운용사 군 선정 공고문",
    "date": "2025-03-12",
-   "deadline": "",
+   "deadline": "2025-03-20",
    "org": "",
    "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=432",
    "first_seen": "2026-06-18",
    "is_new": true,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "새마을금고중앙회"
   }
  ]

@@ -52,6 +52,34 @@ def _clean(s):
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
+def _parse_kdate(s):
+    """'2025년 05월 14일' / '2025.05.14' / '2025-5-14' -> '2025-05-14'"""
+    m = re.search(r"(20\d{2})\s*[.\-/년]\s*(\d{1,2})\s*[.\-/월]\s*(\d{1,2})", s)
+    if not m:
+        return ""
+    y, mo, d = m.groups()
+    return f"{y}-{int(mo):02d}-{int(d):02d}"
+
+
+# 접수마감/접수기한/신청마감/제출기한/접수기간/신청기간/모집기간 등
+_DDL_KW = re.compile(r"(접수\s*마감|접수\s*기한|신청\s*마감|신청\s*기한|제출\s*기한|"
+                     r"제안서?\s*접수|접수\s*기간|신청\s*기간|모집\s*기간|마감\s*일시?)")
+
+
+def extract_deadline(text):
+    """본문 텍스트에서 '접수/신청 마감일'을 추출한다. 기간(A~B)이면 끝 날짜(B)를 마감으로 본다.
+    명확히 못 찾으면 빈 문자열(잘못된 마감 표시 방지)."""
+    text = re.sub(r"[ \t]+", " ", text or "")
+    for m in _DDL_KW.finditer(text):
+        seg = text[m.start():m.end() + 60]
+        if "~" in seg or "∼" in seg or "～" in seg:           # 기간이면 끝 날짜 사용
+            seg = re.split(r"[~∼～]", seg, 1)[1]
+        d = _parse_kdate(seg)
+        if d:
+            return d
+    return ""
+
+
 # ----------------------------------------------------------------------------
 # 1) 한국벤처투자 (KVIC) — 모태펀드 출자사업 공고
 # ----------------------------------------------------------------------------
@@ -194,11 +222,24 @@ def scrape_kfcc(pages=6):
                 "id": gid,
                 "title": full_title,
                 "date": date,
-                "deadline": "",
+                "deadline": _kfcc_deadline(gid),   # 상세 페이지 본문에서 접수마감일 추출
                 "org": "",
                 "url": f"{base}mgNoticeDetail.do?no={gid}",
             })
     return out
+
+
+def _kfcc_deadline(gid):
+    """KFCC 상세 페이지 본문에서 접수마감일을 추출 (없으면 '')."""
+    try:
+        r = _get(f"https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no={gid}")
+        r.encoding = r.apparent_encoding or "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        for t in soup(["script", "style"]):
+            t.decompose()
+        return extract_deadline(soup.get_text(" "))
+    except Exception:
+        return ""
 
 
 # ----------------------------------------------------------------------------
