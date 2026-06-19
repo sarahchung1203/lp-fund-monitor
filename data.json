@@ -1,29 +1,19 @@
 {
  "meta": {
-<<<<<<< Updated upstream
-  "generated_at": "2026-06-19 14:38 KST",
-=======
-  "generated_at": "2026-06-19 15:02 KST",
->>>>>>> Stashed changes
+  "generated_at": "2026-06-19 15:03 KST",
   "today": "2026-06-19",
   "new_days": 3,
-  "total": 44,
-  "new_count": 44,
+  "total": 74,
+  "new_count": 74,
   "closed_count": 16,
   "sources": [
    {
     "code": "kvic",
     "name": "한국벤처투자(모태펀드)",
-<<<<<<< Updated upstream
-    "count": 0,
-    "ok": false,
-    "error": "HTTPSConnectionPool(host='www.kvic.or.kr', port=443): Max retries exceeded with url: /notice/kvic-notice/investment-business-notice?page=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kvic.or.kr', port=443) at 0x7fe32a784e00>, 'Connection to www.kvic.or.kr timed out. (connect timeout=30)'))"
-=======
     "count": 20,
     "ok": true,
     "error": "",
     "carried": 0
->>>>>>> Stashed changes
    },
    {
     "code": "kgrowth",
@@ -52,20 +42,40 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-<<<<<<< Updated upstream
-    "count": 0,
-    "ok": false,
-    "error": "HTTPSConnectionPool(host='www.shinhanfund.com', port=443): Max retries exceeded with url: /api/board/notice?pageNo=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.shinhanfund.com', port=443) at 0x7fe32912ab70>, 'Connection to www.shinhanfund.com timed out. (connect timeout=30)'))"
-=======
     "count": 10,
     "ok": true,
     "error": "",
     "carried": 0
->>>>>>> Stashed changes
    }
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "4884",
+   "title": "모태펀드(특허계정) 2026년 6월 수시 출자사업 계획 공고",
+   "date": "2026-06-18",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4884",
+   "first_seen": "2026-06-19",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4884",
+   "title": "모태펀드(특허계정) 2026년 6월 수시 출자사업 계획 공고",
+   "date": "2026-06-18",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4884",
+   "first_seen": "2026-06-19",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kgrowth",
    "id": "1058",
@@ -91,6 +101,19 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국성장금융"
+  },
+  {
+   "source": "shinhan",
+   "id": "204",
+   "title": "과학기술혁신펀드 2026년 위탁운용사 선정계획 FAQ",
+   "date": "2026-06-17",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=204",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
   },
   {
    "source": "kgrowth",
@@ -130,6 +153,58 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
+   "id": "4883",
+   "title": "모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 계획 공고",
+   "date": "2026-06-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4883",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4882",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 서류심사 결과",
+   "date": "2026-06-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4882",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4883",
+   "title": "모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 계획 공고",
+   "date": "2026-06-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4883",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4882",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 서류심사 결과",
+   "date": "2026-06-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4882",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
@@ -184,6 +259,32 @@
    "source_name": "한국성장금융"
   },
   {
+   "source": "shinhan",
+   "id": "203",
+   "title": "『국민성장펀드(간접투자분야) 정책성펀드』 2026년 2차 위탁운용사 제안서 접수 결과",
+   "date": "2026-06-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=203",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
+   "source": "shinhan",
+   "id": "202",
+   "title": "과학기술혁신펀드 2026년 위탁운용사 선정계획 공고",
+   "date": "2026-06-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=202",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
    "source": "kgrowth",
    "id": "1051",
    "title": "【선정공고】「IBK 국민성장펀드 1호」 국민성장 매칭 1차 위탁운용사 선정계획 공고",
@@ -221,6 +322,110 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
+   "id": "4878",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장, 강원 전략산업, 경남-KDB 지역혁신) 2026년 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4878",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4877",
+   "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4877",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4876",
+   "title": "모태펀드(보건복지부) 2026년 5월 수시 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4876",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4875",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 질의응답 게시의 건",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4875",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4878",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장, 강원 전략산업, 경남-KDB 지역혁신) 2026년 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4878",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4877",
+   "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4877",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4876",
+   "title": "모태펀드(보건복지부) 2026년 5월 수시 출자사업 접수 현황",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4876",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4875",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 질의응답 게시의 건",
+   "date": "2026-06-05",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4875",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
@@ -275,6 +480,32 @@
    "source_name": "한국성장금융"
   },
   {
+   "source": "kvic",
+   "id": "4868",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고",
+   "date": "2026-05-29",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4868",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고",
+   "date": "2026-05-29",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "kgrowth",
    "id": "1037",
    "title": "【선정공고】「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고",
@@ -327,6 +558,58 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kvic",
+   "id": "4867",
+   "title": "모태펀드(교육부) 2026년 2차 정시 출자사업 서류심사 결과",
+   "date": "2026-05-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4866",
+   "title": "모태펀드(우주항공청 등) 2026년 2차 정시 출자사업 서류심사 결과",
+   "date": "2026-05-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4866",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4867",
+   "title": "모태펀드(교육부) 2026년 2차 정시 출자사업 서류심사 결과",
+   "date": "2026-05-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4866",
+   "title": "모태펀드(우주항공청 등) 2026년 2차 정시 출자사업 서류심사 결과",
+   "date": "2026-05-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4866",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "kgrowth",
    "id": "1035",
    "title": "【선정공고】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고",
@@ -364,6 +647,32 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "shinhan",
+   "id": "201",
+   "title": "「국민성장펀드(간접투자분야) 정책성펀드」 2026년 2차 위탁운용사 선정계획 공고",
+   "date": "2026-05-27",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=201",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
+   "source": "shinhan",
+   "id": "200",
+   "title": "국민성장펀드(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정 결과",
+   "date": "2026-05-27",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=200",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
   },
   {
    "source": "kvca",
@@ -429,6 +738,19 @@
    "is_new": true,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "shinhan",
+   "id": "199",
+   "title": "국민성장펀드(간접투자분야) 정책성 펀드 2026년 1차 위탁운용사 서류심사 결과",
+   "date": "2026-05-15",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=199",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
   },
   {
    "source": "kgrowth",
@@ -574,6 +896,19 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "shinhan",
+   "id": "197",
+   "title": "국민성장펀드(간접투자분야) 정책성 펀드 2026년 1차 위탁운용사 제안서 접수결과",
+   "date": "2026-04-30",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=197",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
    "source": "kgrowth",
    "id": "1027",
    "title": "【선정결과】「2기 방산기술혁신펀드」 1차년도 위탁운용사 선정 결과",
@@ -585,6 +920,45 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국성장금융"
+  },
+  {
+   "source": "shinhan",
+   "id": "196",
+   "title": "국민성장(간접투자분야) 정책성 펀드 2026년 1차 위탁운용사 선정 FAQ 게시",
+   "date": "2026-04-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=196",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
+   "source": "shinhan",
+   "id": "195",
+   "title": "국민성장(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정계획 공고(신한자산운용)",
+   "date": "2026-04-15",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=195",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
+   "source": "shinhan",
+   "id": "194",
+   "title": "국민성장(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정계획 공고(한국산업은행)",
+   "date": "2026-04-15",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=194",
+   "first_seen": "2026-06-18",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
   },
   {
    "source": "kgrowth",
