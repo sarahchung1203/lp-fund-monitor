@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-21 20:26 KST",
-  "today": "2026-06-21",
+  "generated_at": "2026-06-23 02:19 KST",
+  "today": "2026-06-23",
   "new_days": 3,
   "total": 74,
-  "new_count": 74,
-  "closed_count": 18,
+  "new_count": 1,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -51,6 +51,19 @@
  },
  "items": [
   {
+   "source": "kgrowth",
+   "id": "1067",
+   "title": "【제출서식】(재공고)「성장사다리펀드2」 2024년(1차년도) 위탁운용사 선정 제출서류 및 서식",
+   "date": "2026-06-22",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1067&str_type=1&tab=1",
+   "first_seen": "2026-06-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
    "source": "kvic",
    "id": "4890",
    "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 접수 현황",
@@ -59,7 +72,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4890",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -72,7 +85,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4890",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -85,7 +98,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1060&str_type=1&tab=1",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -98,7 +111,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1059&str_type=1&tab=1",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -111,7 +124,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4884",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -124,7 +137,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4884",
    "first_seen": "2026-06-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -137,7 +150,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1058&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -150,7 +163,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1057&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -163,7 +176,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=204",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -176,7 +189,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1056&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -189,7 +202,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1054&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -202,7 +215,7 @@
    "org": "전북특별자치도",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=861",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -215,7 +228,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4883",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -228,7 +241,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4882",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -241,7 +254,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4883",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -254,7 +267,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4882",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -267,7 +280,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1053&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -280,7 +293,7 @@
    "org": "충청남도",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=860",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -293,7 +306,7 @@
    "org": "충청남도",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=859",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -306,7 +319,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1052&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -319,7 +332,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=203",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -332,7 +345,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=202",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -345,7 +358,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1051&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -356,10 +369,10 @@
    "date": "2026-06-10",
    "deadline": "2026-06-22",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1050&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1050&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
-   "is_closed": false,
+   "is_new": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -371,7 +384,7 @@
    "org": "부천산업진흥원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=858",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -384,7 +397,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4878",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -397,7 +410,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4877",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -410,7 +423,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4876",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -423,7 +436,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4875",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -436,7 +449,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4878",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -449,7 +462,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4877",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -462,7 +475,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4876",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -475,7 +488,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4875",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -488,7 +501,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1048&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -501,7 +514,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1047&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -514,7 +527,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1042&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -527,7 +540,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1039&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -540,7 +553,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -553,7 +566,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -566,7 +579,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1037&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -579,7 +592,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1036&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -592,7 +605,7 @@
    "org": "한국성장금융",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=856",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -605,7 +618,7 @@
    "org": "한국벤처투자",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=855",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -618,7 +631,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -631,7 +644,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -644,7 +657,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1035&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -657,7 +670,7 @@
    "org": "한국성장금융",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=857",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -670,7 +683,7 @@
    "org": "키움인베스트먼트",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=854",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -683,7 +696,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=201",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -696,7 +709,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=200",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -709,7 +722,7 @@
    "org": "하나벤처스",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=853",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -722,7 +735,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1032&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -735,7 +748,7 @@
    "org": "IBK기업은행",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=852",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -748,7 +761,7 @@
    "org": "한국벤처투자",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=851",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -761,7 +774,7 @@
    "org": "중소기업중앙회",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=850",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -774,7 +787,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=199",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -787,7 +800,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1030&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "한국성장금융"
   },
@@ -800,7 +813,7 @@
    "org": "농업정책보험금융원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=844",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -813,7 +826,7 @@
    "org": "한국성장금융",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=812",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -826,7 +839,7 @@
    "org": "한국벤처투자",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=811",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -839,22 +852,9 @@
    "org": "서초구청",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=810",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1029",
-   "title": "【선정결과】「2026년 국민성장펀드(국민참여형)」위탁운용사 선정 결과",
-   "date": "2026-05-06",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1029&str_type=1&tab=1",
-   "first_seen": "2026-06-18",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kvca",
@@ -865,7 +865,7 @@
    "org": "사립학교교직원연금공단",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=807",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -878,7 +878,7 @@
    "org": "한국산업은행",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=849",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -891,7 +891,7 @@
    "org": "화성시",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=809",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -904,7 +904,7 @@
    "org": "성남시, 성남산업진흥원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=808",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
@@ -917,7 +917,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=197",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -930,7 +930,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=196",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -943,7 +943,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=195",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -956,7 +956,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=194",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -969,7 +969,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=936&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -982,7 +982,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=913&str_type=1&tab=1",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -995,7 +995,7 @@
    "org": "",
    "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=436",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "새마을금고중앙회"
   },
@@ -1008,7 +1008,7 @@
    "org": "",
    "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=432",
    "first_seen": "2026-06-18",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "새마을금고중앙회"
   }
