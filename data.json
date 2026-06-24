@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-23 20:40 KST",
-  "today": "2026-06-23",
+  "generated_at": "2026-06-24 19:35 KST",
+  "today": "2026-06-24",
   "new_days": 3,
   "total": 74,
-  "new_count": 1,
-  "closed_count": 19,
+  "new_count": 6,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -50,6 +50,71 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "4894",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 선정 결과",
+   "date": "2026-06-24",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4894",
+   "first_seen": "2026-06-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4893",
+   "title": "모태펀드(보건복지부) 2026년 2차 정시 출자사업 선정 결과",
+   "date": "2026-06-24",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4893",
+   "first_seen": "2026-06-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4894",
+   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 선정 결과",
+   "date": "2026-06-24",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4894",
+   "first_seen": "2026-06-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4893",
+   "title": "모태펀드(보건복지부) 2026년 2차 정시 출자사업 선정 결과",
+   "date": "2026-06-24",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4893",
+   "first_seen": "2026-06-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1068",
+   "title": "【제출서식】「핀테크혁신펀드 7차 [Next Finance]」제출서류 및 서식",
+   "date": "2026-06-24",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1068&str_type=1&tab=1",
+   "first_seen": "2026-06-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kgrowth",
    "id": "1067",
@@ -356,7 +421,7 @@
    "date": "2026-06-10",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1051&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1051&str_type=1&tab=1",
    "first_seen": "2026-06-18",
    "is_new": false,
    "is_closed": false,
@@ -545,32 +610,6 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "kvic",
-   "id": "4868",
-   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고",
-   "date": "2026-05-29",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
-   "first_seen": "2026-06-18",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4868",
-   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고",
-   "date": "2026-05-29",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4868",
-   "first_seen": "2026-06-18",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1037",
    "title": "【선정공고】「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고",
@@ -621,32 +660,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvic",
-   "id": "4867",
-   "title": "모태펀드(교육부) 2026년 2차 정시 출자사업 서류심사 결과",
-   "date": "2026-05-28",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
-   "first_seen": "2026-06-18",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4867",
-   "title": "모태펀드(교육부) 2026년 2차 정시 출자사업 서류심사 결과",
-   "date": "2026-05-28",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4867",
-   "first_seen": "2026-06-18",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
@@ -790,19 +803,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1030",
-   "title": "【선정공고】「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고",
-   "date": "2026-05-13",
-   "deadline": "2026-06-05",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1030&str_type=1&tab=1",
-   "first_seen": "2026-06-18",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kvca",
