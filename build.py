@@ -8,6 +8,7 @@ LP 출자사업 공고 모니터링 — 빌드 스크립트
 실행: python build.py
 """
 import json
+import re
 import sys
 import time
 import traceback
@@ -24,14 +25,19 @@ HTML_FILE = ROOT / "index.html"
 
 NEW_DAYS = 3  # 처음 수집된 뒤 며칠 동안 NEW 배지를 유지할지
 
-SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan"]
+SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan", "kofia"]
 SOURCE_COLORS = {
     "kvic": "#1c3c63",     # 네이비 (Premier Partners 메인)
     "kgrowth": "#2f6fa5",  # 애저 블루
     "kvca": "#5a6bb0",     # 인디고
     "kfcc": "#2f8f7a",     # 틸 ([펀드]/[운용사] 소스)
     "shinhan": "#7d5ba6",  # 퍼플
+    "kofia": "#b5524b",    # 테라코타 (집약 게시판)
 }
+
+# 명백히 펀드 출자와 무관한 공고(채용/포럼/시스템 등) — 모든 소스에 적용해 제외
+GLOBAL_EXCLUDE = re.compile(r"채용|포럼|세미나|워크숍|행사\s*안내|시상|수상|보도자료|"
+                            r"시스템\s*점검|점검\s*안내|개인정보|홈페이지\s*개편|연락처|설문조사|이벤트")
 
 
 def load_state():
@@ -52,6 +58,46 @@ def _short_err(e):
     if any(k in e for k in ("timed out", "ConnectTimeout", "Max retries", "ConnectionError", "ReadTimeout")):
         return "연결 시간 초과"
     return e[:80]
+
+
+def _doc_rank(title):
+    """공고 종류 우선순위(낮을수록 대표). 같은 펀드의 본 공고를 서식/현황보다 우선."""
+    if re.search(r"제출\s*서[류식]|서식|양식|FAQ|질의|Q\s*&\s*A", title):
+        return 3
+    if re.search(r"접수\s*현황|선정\s*결과|심사\s*결과|결과", title):
+        return 2
+    if re.search(r"선정\s*계획|출자\s*사업|위탁운용사|선정\s*공고|출자\s*공고|모집\s*공고|운용사\s*선정", title):
+        return 0
+    return 1
+
+
+def _norm_fund(title):
+    """제목 정규화: 【선정공고】·[기관] 태그/기호/공백 제거 → 같은 펀드 식별용."""
+    t = re.sub(r"[【\[][^】\]]{0,25}[】\]]", "", title or "")
+    t = re.sub(r"[^0-9A-Za-z가-힣]", "", t)
+    t = re.sub(r"(공고문?|공고안|계획|의건|공고)$", "", t)
+    return t.lower()
+
+
+def _dedup(items):
+    """같은 펀드+같은 종류의 공고가 여러 소스에 중복되면 하나만(마감일 보유 > 소스 우선순위)."""
+    prio = {c: i for i, c in enumerate(SOURCE_ORDER)}
+    best, order = {}, []
+    for it in items:
+        fund = _norm_fund(it.get("title", ""))
+        if len(fund) < 6:                      # 너무 짧으면 오병합 위험 → 중복판정 제외
+            order.append(it)
+            continue
+        key = fund + ":" + str(_doc_rank(it.get("title", "")))
+        cur = best.get(key)
+        if cur is None:
+            best[key] = it
+            order.append(it)
+        elif (bool(it.get("deadline")), -prio.get(it["source"], 99)) > \
+             (bool(cur.get("deadline")), -prio.get(cur["source"], 99)):
+            order[order.index(cur)] = it
+            best[key] = it
+    return order
 
 
 def main():
@@ -98,6 +144,13 @@ def main():
                                   "error": _short_err(err), "carried": len(carried)})
             all_items.extend(carried)
             print(f"[FAIL] {code}: {err} — 이전 {len(carried)}건 유지")
+
+    # 펀드 출자와 무관한 공고 제거(채용/포럼 등) + 소스 간 중복 제거
+    n0 = len(all_items)
+    all_items = [it for it in all_items if not GLOBAL_EXCLUDE.search(it.get("title", ""))]
+    n1 = len(all_items)
+    all_items = _dedup(all_items)
+    print(f"필터 제거 {n0 - n1}건 · 중복 제거 {n1 - len(all_items)}건 → {len(all_items)}건")
 
     # 첨부 PDF에서 마감일 보강 (K-Growth/신한). 결과는 캐시 → 매일 새 항목만 다운로드.
     dcache = state.setdefault("deadline_cache", {})

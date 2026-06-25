@@ -14,9 +14,13 @@ LP 출자사업 공고 수집기 (scrapers)
   url          : 원문 공고 페이지 URL
 """
 import re
+import time
 import requests
+import urllib3
 from bs4 import BeautifulSoup
 from datetime import date, timedelta
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 try:
     import fitz  # PyMuPDF — 첨부 PDF에서 마감일 추출용
@@ -43,7 +47,27 @@ SOURCE_NAMES = {
     "kvca": "벤처캐피탈협회",
     "kfcc": "새마을금고중앙회",
     "shinhan": "신한벤처투자",
+    "kofia": "금융투자협회(KOFIA)",
 }
+
+# KOFIA(금융투자협회) 안내사항 게시판: 펀드 출자(사모/PE/VC 블라인드) 공고만 선별.
+# 공모주식·채권 위탁/거래증권사 같은 공개시장 운용사 선정·채용·포럼 등은 제외.
+_KOFIA_INC = re.compile(r"출자|블라인드|모펀드|모태|벤처|사모|PE|에쿼티|투자조합|세컨더리|"
+                        r"프로젝트\s*펀드|업무집행조합원|신기술|임팩트|메자닌|그로스|바이아웃|코파|루키")
+_KOFIA_EXC = re.compile(r"채용|포럼|세미나|워크숍|행사|시상|수상|보도|거래\s*증권사|증권사\s*선정|"
+                        r"수탁|사무관리|국내\s*주식|해외\s*주식|주식형|채권|지분증권|대형주|중소형주|"
+                        r"Active|패시브|인덱스|MMF|자문운용사|설명회|점검|일반사무")
+_KOFIA_FUNDSEL = re.compile(r"위탁운용사|출자|운용사\s*선정|업무집행")
+
+
+def _is_kofia_fund(title):
+    """KOFIA 제목이 '펀드 출자(사모/PE/VC)' 공고인지. 공개시장 운용/채용/포럼 등은 제외."""
+    if _KOFIA_EXC.search(title):
+        return False
+    if _KOFIA_INC.search(title):
+        return True
+    # 일반 '○○펀드 위탁운용사/출자/운용사 선정'도 포함 (공개시장형은 위 EXC에서 이미 제거)
+    return bool(re.search(r"펀드", title) and _KOFIA_FUNDSEL.search(title))
 
 
 def _new_session():
@@ -115,6 +139,7 @@ def extract_deadline(text):
 def scrape_kvic(pages=2):
     base = "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice"
     out = []
+    seen = set()
     for p in range(1, pages + 1):
         r = _get(f"{base}?page={p}")
         r.encoding = r.apparent_encoding or "utf-8"
@@ -124,6 +149,9 @@ def scrape_kvic(pages=2):
             if not m:
                 continue
             gid = m.group(1)
+            if gid in seen:                 # ?page=2가 1페이지를 반복 반환 → 중복 방지
+                continue
+            seen.add(gid)
             tr = a.find_parent("tr")
             row_text = _clean(tr.get_text(" ", strip=True)) if tr else ""
             out.append({
@@ -414,12 +442,68 @@ def attachment_deadline(source, gid, ann_date=""):
     return ""
 
 
+# ----------------------------------------------------------------------------
+# 6) 금융투자협회 (KOFIA) — 안내사항 (여러 LP의 위탁운용사 선정/출자 공고 집약)
+#    펀드 출자(사모/PE/VC) 공고만 선별. POST 아닌 풀 쿼리스트링 GET으로 페이징.
+# ----------------------------------------------------------------------------
+def scrape_kofia(pages=6):
+    base = "https://www.kofia.or.kr:12443/brd/m_212/"
+    qs = ("list.do?page=%d&srchFr=&srchTo=&srchWord=&srchTp="
+          "&multi_itm_seq=0&itm_seq_1=0&itm_seq_2=0&company_cd=&company_nm=")
+    out, seen, loaded = [], set(), 0
+    for p in range(1, pages + 1):
+        try:
+            r = _get(base + (qs % p), verify=False)
+        except Exception:
+            continue
+        r.encoding = "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        anchors = soup.select('a[href*="view.do"]')
+        if anchors:
+            loaded += 1
+        for a in anchors:
+            m = re.search(r"seq=(\d+)", a.get("href", ""))
+            if not m:
+                continue
+            gid = m.group(1)
+            title = _clean(a.get_text())
+            if not title or gid in seen:
+                continue
+            # 펀드 출자 공고만 (공개시장 운용/채용/포럼 등 제외)
+            if not _is_kofia_fund(title):
+                continue
+            seen.add(gid)
+            tr = a.find_parent("tr")
+            date = ""
+            if tr:
+                for td in tr.find_all("td"):
+                    d = _norm_date(td.get_text())
+                    if d:
+                        date = d
+                        break
+            om = re.match(r"\[([^\]]+)\]", title)     # [기관명] 접두 → 주관기관
+            out.append({
+                "source": "kofia",
+                "id": gid,
+                "title": title,
+                "date": date,
+                "deadline": "",
+                "org": om.group(1) if om else "",
+                "url": base + "view.do?seq=" + gid,
+            })
+        time.sleep(1.0)                                # 호출 간격(차단 방지)
+    if loaded == 0:                                    # 한 페이지도 못 읽음 → 차단/장애 → 이월 처리
+        raise RuntimeError("KOFIA 접근 실패(차단/네트워크)")
+    return out
+
+
 SCRAPERS = {
     "kvic": scrape_kvic,
     "kgrowth": scrape_kgrowth,
     "kvca": scrape_kvca,
     "kfcc": scrape_kfcc,
     "shinhan": scrape_shinhan,
+    "kofia": scrape_kofia,
 }
 
 
