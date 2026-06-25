@@ -1,18 +1,10 @@
 {
  "meta": {
-<<<<<<< Updated upstream
-  "generated_at": "2026-06-25 15:27 KST",
-  "today": "2026-06-25",
-  "new_days": 3,
-  "total": 60,
-  "new_count": 60,
-=======
-  "generated_at": "2026-06-25 15:41 KST",
+  "generated_at": "2026-06-25 15:44 KST",
   "today": "2026-06-25",
   "new_days": 3,
   "total": 70,
   "new_count": 70,
->>>>>>> Stashed changes
   "closed_count": 18,
   "sources": [
    {
