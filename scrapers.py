@@ -446,7 +446,7 @@ def attachment_deadline(source, gid, ann_date=""):
 # 6) 금융투자협회 (KOFIA) — 안내사항 (여러 LP의 위탁운용사 선정/출자 공고 집약)
 #    펀드 출자(사모/PE/VC) 공고만 선별. POST 아닌 풀 쿼리스트링 GET으로 페이징.
 # ----------------------------------------------------------------------------
-def scrape_kofia(pages=6):
+def scrape_kofia(pages=8):
     base = "https://www.kofia.or.kr:12443/brd/m_212/"
     qs = ("list.do?page=%d&srchFr=&srchTo=&srchWord=&srchTp="
           "&multi_itm_seq=0&itm_seq_1=0&itm_seq_2=0&company_cd=&company_nm=")
@@ -458,28 +458,28 @@ def scrape_kofia(pages=6):
             continue
         r.encoding = "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
-        anchors = soup.select('a[href*="view.do"]')
-        if anchors:
+        # 게시글 상세 링크(view.do?seq=)만. 제목은 앵커가 아니라 해당 <td>에 들어있음.
+        detail = soup.find_all("a", href=re.compile(r"view\.do\?seq=\d+"))
+        if detail:
             loaded += 1
-        for a in anchors:
-            m = re.search(r"seq=(\d+)", a.get("href", ""))
-            if not m:
-                continue
-            gid = m.group(1)
-            title = _clean(a.get_text())
-            if not title or gid in seen:
-                continue
-            # 펀드 출자 공고만 (공개시장 운용/채용/포럼 등 제외)
-            if not _is_kofia_fund(title):
+        for a in detail:
+            gid = re.search(r"seq=(\d+)", a["href"]).group(1)
+            if gid in seen:
                 continue
             seen.add(gid)
+            td = a.find_parent("td")
+            title = _clean(td.get_text()) if td else _clean(a.get_text())
+            title = re.sub(r"^(\[[^\]]+\])\s*\1", r"\1", title)   # 중복된 [기관] 접두 1개로
+            # 펀드 출자 공고만 (공개시장 운용/채용/포럼 등 제외)
+            if not title or not _is_kofia_fund(title):
+                continue
             tr = a.find_parent("tr")
             date = ""
             if tr:
-                for td in tr.find_all("td"):
-                    d = _norm_date(td.get_text())
-                    if d:
-                        date = d
+                for d in tr.find_all("td"):
+                    dd = _norm_date(d.get_text())
+                    if dd:
+                        date = dd
                         break
             om = re.match(r"\[([^\]]+)\]", title)     # [기관명] 접두 → 주관기관
             out.append({

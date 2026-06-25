@@ -1,10 +1,18 @@
 {
  "meta": {
+<<<<<<< Updated upstream
   "generated_at": "2026-06-25 15:27 KST",
   "today": "2026-06-25",
   "new_days": 3,
   "total": 60,
   "new_count": 60,
+=======
+  "generated_at": "2026-06-25 15:41 KST",
+  "today": "2026-06-25",
+  "new_days": 3,
+  "total": 70,
+  "new_count": 70,
+>>>>>>> Stashed changes
   "closed_count": 18,
   "sources": [
    {
@@ -50,7 +58,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 0,
+    "count": 12,
     "ok": true,
     "error": "",
     "carried": 0
@@ -200,6 +208,19 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kofia",
+   "id": "298",
+   "title": "[전문건설공제조합] 2026 국내 PE 블라인드펀드 위탁운용사 선정 공고",
+   "date": "2026-06-18",
+   "deadline": "",
+   "org": "전문건설공제조합",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=298",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
   },
   {
    "source": "kgrowth",
@@ -670,6 +691,19 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kofia",
+   "id": "280",
+   "title": "[우정사업본부] 2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고",
+   "date": "2026-05-13",
+   "deadline": "",
+   "org": "우정사업본부",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=280",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
    "source": "kvca",
    "id": "811",
    "title": "모태펀드(보건복지부) 2026년 5월 수시 출자사업 계획 공고",
@@ -761,6 +795,19 @@
    "source_name": "신한벤처투자"
   },
   {
+   "source": "kofia",
+   "id": "274",
+   "title": "[공무원연금공단] 2026년 공무원연금공단 국내부동산 블라인드펀드 위탁운용사 선정 공고",
+   "date": "2026-04-27",
+   "deadline": "",
+   "org": "공무원연금공단",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=274",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
    "source": "shinhan",
    "id": "196",
    "title": "국민성장(간접투자분야) 정책성 펀드 2026년 1차 위탁운용사 선정 FAQ 게시",
@@ -798,6 +845,97 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "신한벤처투자"
+  },
+  {
+   "source": "kofia",
+   "id": "267",
+   "title": "[한국성장금융] 2026년 국민성장펀드(국민참여형) 위탁운용사 선정계획 공고",
+   "date": "2026-04-13",
+   "deadline": "",
+   "org": "한국성장금융",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=267",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "250",
+   "title": "[중소벤처기업진흥공단] 26년 스케일업금융 발행계획 공고",
+   "date": "2026-03-18",
+   "deadline": "",
+   "org": "중소벤처기업진흥공단",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=250",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "246",
+   "title": "[한국자산관리공사] 지방은행 금융안정 지원펀드 2호 위탁 운용사 선정계획 공고",
+   "date": "2026-03-12",
+   "deadline": "",
+   "org": "한국자산관리공사",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=246",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "233",
+   "title": "[중소기업중앙회] 2026년 국내 부동산 지분 블라인드 펀드 위탁운용사 선정 공고",
+   "date": "2026-02-09",
+   "deadline": "",
+   "org": "중소기업중앙회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=233",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "232",
+   "title": "[에너지인프라자산운용] 에너지신산업펀드 『2026년 탄소중립 e-신산업 육성펀드』 위탁운용사 선정계획 공고",
+   "date": "2026-02-06",
+   "deadline": "",
+   "org": "에너지인프라자산운용",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=232",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "225",
+   "title": "[건설근로자공제회] 2026년도 대체투자(국내 부동산 선순위 대출펀드) 위탁운용사 선정 공고",
+   "date": "2026-01-15",
+   "deadline": "",
+   "org": "건설근로자공제회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=225",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "222",
+   "title": "[수협중앙회] 2026년 상반기 전문사모운용사 및 자문사 대상 위탁운용사 POOL 선정",
+   "date": "2026-01-09",
+   "deadline": "",
+   "org": "수협중앙회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=222",
+   "first_seen": "2026-06-25",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
   },
   {
    "source": "kgrowth",
