@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-25 19:26 KST",
-  "today": "2026-06-25",
+  "generated_at": "2026-06-26 19:39 KST",
+  "today": "2026-06-26",
   "new_days": 3,
-  "total": 70,
-  "new_count": 70,
-  "closed_count": 18,
+  "total": 69,
+  "new_count": 69,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -58,6 +58,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "4902",
+   "title": "한국모태펀드(교육부) 2026년 2차 정시 출자사업 선정 결과",
+   "date": "2026-06-26",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4902",
+   "first_seen": "2026-06-26",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4901",
+   "title": "한국모태펀드(우주항공청 등) 2026년 2차 정시 출자사업 선정 결과",
+   "date": "2026-06-26",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4901",
+   "first_seen": "2026-06-26",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kgrowth",
    "id": "1069",
@@ -215,6 +241,19 @@
    "source_name": "금융투자협회(KOFIA)"
   },
   {
+   "source": "kvca",
+   "id": "862",
+   "title": "「핀테크혁신펀드 7차 [Next Finance]」 위탁운용사 선정계획 공고",
+   "date": "2026-06-17",
+   "deadline": "2026-07-08",
+   "org": "한국성장금융",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=862",
+   "first_seen": "2026-06-26",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kgrowth",
    "id": "1058",
    "title": "【선정공고】「성장사다리펀드2」 2026년(3차년도) 위탁운용사 선정계획 공고",
@@ -222,19 +261,6 @@
    "deadline": "2026-07-08",
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1058&str_type=1&tab=1",
-   "first_seen": "2026-06-25",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1057",
-   "title": "【선정공고】「핀테크혁신펀드 7차 [Next Finance]」 위탁운용사 선정계획 공고",
-   "date": "2026-06-17",
-   "deadline": "2026-07-08",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1057&str_type=1&tab=1",
    "first_seen": "2026-06-25",
    "is_new": true,
    "is_closed": false,
@@ -436,32 +462,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvic",
-   "id": "4878",
-   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장, 강원 전략산업, 경남-KDB 지역혁신) 2026년 출자사업 접수 현황",
-   "date": "2026-06-05",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4878",
-   "first_seen": "2026-06-25",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4877",
-   "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 접수 현황",
-   "date": "2026-06-05",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4877",
-   "first_seen": "2026-06-25",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1048",
    "title": "【접수현황】「 K-방산수출펀드」 2차년도 위탁운용사 접수 현황",
@@ -611,7 +611,7 @@
    "date": "2026-05-18",
    "deadline": "2026-05-29",
    "org": "IBK기업은행",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=852",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=852",
    "first_seen": "2026-06-25",
    "is_new": true,
    "is_closed": true,
@@ -716,19 +716,6 @@
    "deadline": "2026-06-10",
    "org": "서초구청",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=810",
-   "first_seen": "2026-06-25",
-   "is_new": true,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "807",
-   "title": "2026년도 사립학교교직원연금공단 VC 블라인드펀드",
-   "date": "2026-05-04",
-   "deadline": "2026-05-26",
-   "org": "사립학교교직원연금공단",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=807",
    "first_seen": "2026-06-25",
    "is_new": true,
    "is_closed": true,
