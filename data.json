@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-06-27 18:16 KST",
-  "today": "2026-06-27",
+  "generated_at": "2026-06-28 19:10 KST",
+  "today": "2026-06-28",
   "new_days": 3,
   "total": 69,
   "new_count": 69,
@@ -42,10 +42,10 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-    "count": 10,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 9,
+    "ok": false,
+    "error": "연결 시간 초과",
+    "carried": 9
    },
    {
     "code": "kofia",
