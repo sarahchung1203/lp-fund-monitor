@@ -25,7 +25,8 @@ HTML_FILE = ROOT / "index.html"
 
 NEW_DAYS = 3  # 처음 수집된 뒤 며칠 동안 NEW 배지를 유지할지
 
-SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan", "kofia"]
+SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan", "kofia",
+                "nps", "mmaa", "ktcu", "kif"]
 SOURCE_COLORS = {
     "kvic": "#1c3c63",     # 네이비 (Premier Partners 메인)
     "kgrowth": "#2f6fa5",  # 애저 블루
@@ -33,6 +34,10 @@ SOURCE_COLORS = {
     "kfcc": "#2f8f7a",     # 틸 ([펀드]/[운용사] 소스)
     "shinhan": "#7d5ba6",  # 퍼플
     "kofia": "#b5524b",    # 테라코타 (집약 게시판)
+    "nps": "#0e7490",      # 시안 (국민연금)
+    "mmaa": "#4d7c0f",     # 올리브 (군인공제회)
+    "ktcu": "#be185d",     # 마젠타 (교직원공제회)
+    "kif": "#7c2d12",      # 브라운 (KIF)
 }
 
 # 명백히 펀드 출자와 무관한 공고(채용/포럼/시스템 등) — 모든 소스에 적용해 제외

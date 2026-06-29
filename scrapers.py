@@ -48,7 +48,31 @@ SOURCE_NAMES = {
     "kfcc": "새마을금고중앙회",
     "shinhan": "신한벤처투자",
     "kofia": "금융투자협회(KOFIA)",
+    "nps": "국민연금(기금운용)",
+    "mmaa": "군인공제회",
+    "ktcu": "교직원공제회",
+    "kif": "KIF(한국IT펀드)",
 }
+
+# 혼합 게시판(공지/입찰에 펀드 공고가 섞임)에서 '펀드 출자(사모/PE/VC/대체) 운용사 선정'만 선별.
+# 공개시장(주식·채권) 위탁/거래증권사/수탁/자문/채용/포럼/용역 등은 제외.
+_FUND_EXC = re.compile(r"채용|포럼|세미나|워크숍|행사|시상|수상|보도|거래\s*증권사|증권사\s*선정|"
+                       r"수탁|주식형|채권형|국내\s*주식|해외\s*주식|국내\s*채권|해외\s*채권|지분증권|"
+                       r"대형주|중소형주|Active|패시브|인덱스|지수|MMF|단기자금|자문\s*운용사|자문사|"
+                       r"설명회|점검|일반\s*사무|사무관리|용역|취약점|입주기업|경진대회|아파트|분양|"
+                       r"제공사|액셀러|보육|입주|컨설팅")
+_FUND_INC = re.compile(r"출자|위탁운용사|업무집행조합원|블라인드|사모|PE|에쿼티|벤처\s*펀드|벤처투자|"
+                       r"투자조합|모펀드|모태|대체투자|부동산\s*투자|인프라\s*펀드|메자닌|세컨더리|"
+                       r"신기술\s*투자|임팩트\s*펀드|그로스\s*펀드|바이아웃|코파\s*펀드|루키")
+
+
+def _is_fund_sel(title):
+    """제목이 '펀드 출자(사모/PE/VC/대체) 운용사 선정' 공고인지. 공개시장/비펀드 공고는 제외."""
+    if not title or _FUND_EXC.search(title):
+        return False
+    if _FUND_INC.search(title):
+        return True
+    return bool(re.search(r"펀드", title) and re.search(r"위탁운용사|출자|운용사\s*선정|업무집행", title))
 
 # KOFIA(금융투자협회) 안내사항 게시판: 펀드 출자(사모/PE/VC 블라인드) 공고만 선별.
 # 공모주식·채권 위탁/거래증권사 같은 공개시장 운용사 선정·채용·포럼 등은 제외.
@@ -497,6 +521,188 @@ def scrape_kofia(pages=8):
     return out
 
 
+# ----------------------------------------------------------------------------
+# 7) 국민연금 기금운용본부 (NPS) — 거래기관 선정공고 (사모/대체/부동산 위탁운용사)
+# ----------------------------------------------------------------------------
+def scrape_nps(pages=3):
+    base = "https://fund.nps.or.kr/impa/"
+    listurl = base + "dlnginstslctnpbanclist/getOHEF0017M0.do"
+    dtl = base + "dlnginstslctnpbancdtl/getOHEF0018M0.do"
+    out, seen, loaded = [], set(), 0
+    for p in range(1, pages + 1):
+        try:
+            r = _get(f"{listurl}?pageIndex={p}", verify=False)
+        except Exception:
+            continue
+        r.encoding = "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        anchors = soup.select("a[href*='fnc_goBbsDetail'], td.title a")
+        if anchors:
+            loaded += 1
+        for a in anchors:
+            blob = (a.get("href") or "") + (a.get("onclick") or "")
+            m = re.search(r"fnc_goBbsDetail\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"]([^'\"]+)['\"]", blob)
+            if not m:
+                continue
+            pst, bbs = m.group(1), m.group(2)
+            if pst in seen:
+                continue
+            seen.add(pst)
+            title = _clean(a.get_text())
+            if not _is_fund_sel(title):
+                continue
+            tr = a.find_parent("tr")
+            date = ""
+            if tr:
+                for td in tr.find_all("td"):
+                    d = _norm_date(td.get_text())
+                    if d:
+                        date = d
+                        break
+            out.append({"source": "nps", "id": pst, "title": title, "date": date,
+                        "deadline": "", "org": "국민연금",
+                        "url": f"{dtl}?pstId={pst}&hmpgBbsCd={bbs}&hmpgCd=02"})
+        time.sleep(0.5)
+    if loaded == 0:
+        raise RuntimeError("NPS 접근 실패")
+    return out
+
+
+# ----------------------------------------------------------------------------
+# 8) 군인공제회 (MMAA) — 공지사항 중 펀드 출자/위탁운용사 선정만
+# ----------------------------------------------------------------------------
+def scrape_mmaa(pages=2):
+    base = "https://www.mmaa.or.kr/web/contents/notice.do"
+    out, seen, loaded = [], set(), 0
+    for p in range(1, pages + 1):
+        try:
+            r = _get(f"{base}?schM=list&page={p}", verify=False)
+        except Exception:
+            continue
+        r.encoding = r.apparent_encoding or "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        anchors = soup.select("a[onclick*='fn_goView']")
+        if anchors:
+            loaded += 1
+        for a in anchors:
+            m = re.search(r"fn_goView\(\s*['\"](\d+)['\"]", a.get("onclick") or "")
+            if not m:
+                continue
+            gid = m.group(1)
+            if gid in seen:
+                continue
+            seen.add(gid)
+            title = _clean(a.get_text())
+            if not _is_fund_sel(title):
+                continue
+            tr = a.find_parent("tr")
+            date = ""
+            if tr:
+                for td in tr.find_all("td"):
+                    d = _norm_date(td.get_text())
+                    if d:
+                        date = d
+                        break
+            out.append({"source": "mmaa", "id": gid, "title": title, "date": date,
+                        "deadline": "", "org": "군인공제회",
+                        "url": f"{base}?schM=view&page=1&id={gid}"})
+        time.sleep(0.5)
+    if loaded == 0:
+        raise RuntimeError("군인공제회 접근 실패")
+    return out
+
+
+# ----------------------------------------------------------------------------
+# 9) 한국교직원공제회 (KTCU) — 공지사항 중 펀드 출자/위탁운용사 선정만
+#    1페이지는 GET, 2페이지~는 POST(curPage)
+# ----------------------------------------------------------------------------
+def scrape_ktcu(pages=3):
+    base = "https://www.ktcu.or.kr/PPW-CSB-000101"
+    out, seen, loaded = [], set(), 0
+    sess = _new_session()
+    for p in range(1, pages + 1):
+        try:
+            if p == 1:
+                r = sess.get(base, timeout=TIMEOUT, verify=False)
+            else:
+                r = sess.post(base, timeout=TIMEOUT, verify=False,
+                              data={"curPage": str(p), "srchKey": "sj", "srchText": "", "srchCtgry": ""})
+            r.raise_for_status()
+        except Exception:
+            continue
+        r.encoding = "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        lis = soup.select("ul#ulList li")
+        if lis:
+            loaded += 1
+        for li in lis:
+            a = li.select_one("a[href*='fn_view'], span.tit a")
+            if not a:
+                continue
+            m = re.search(r"fn_view\(\s*['\"](\d+)['\"]", (a.get("href") or "") + (a.get("onclick") or ""))
+            if not m:
+                continue
+            gid = m.group(1)
+            if gid in seen:
+                continue
+            seen.add(gid)
+            title = _clean(a.get_text())
+            if not _is_fund_sel(title):
+                continue
+            date = ""
+            for de in li.select("span.date"):
+                d = _norm_date(de.get_text())
+                if d:
+                    date = d
+                    break
+            out.append({"source": "ktcu", "id": gid, "title": title, "date": date,
+                        "deadline": "", "org": "교직원공제회",
+                        "url": f"{base}/{gid}"})
+        time.sleep(0.5)
+    if loaded == 0:
+        raise RuntimeError("교직원공제회 접근 실패")
+    return out
+
+
+# ----------------------------------------------------------------------------
+# 10) KIF 한국IT펀드 (KTOA 입찰공고) — 업무집행조합원 선정 등
+# ----------------------------------------------------------------------------
+def scrape_kif(pages=4):
+    api = "https://www.ktoa.or.kr/ko/notice/bidding/page"
+    view = "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey="
+    hdr = {"X-Requested-With": "XMLHttpRequest",
+           "Referer": "https://www.ktoa.or.kr/ko/notice/bidding/list"}
+    out, seen, loaded = [], set(), 0
+    for p in range(1, pages + 1):
+        try:
+            r = _get(f"{api}?pageIndex={p}&listRowSize=10&f=1&q=", headers={**HEADERS, **hdr})
+        except Exception:
+            continue
+        r.encoding = "utf-8"
+        soup = BeautifulSoup(r.text, "lxml")
+        units = soup.select("a.listView, a[data-details-key]")
+        if units:
+            loaded += 1
+        for a in units:
+            key = a.get("data-details-key")
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            tt = a.select_one(".title")
+            title = _clean(tt.get_text()) if tt else _clean(a.get_text())
+            if not _is_fund_sel(title):
+                continue
+            de = a.select_one(".date")
+            date = _norm_date(de.get_text()) if de else ""
+            out.append({"source": "kif", "id": key, "title": title, "date": date,
+                        "deadline": "", "org": "KIF(KTOA)",
+                        "url": view + key})
+        time.sleep(0.5)
+    if loaded == 0:
+        raise RuntimeError("KIF 접근 실패")
+    return out
+
+
 SCRAPERS = {
     "kvic": scrape_kvic,
     "kgrowth": scrape_kgrowth,
@@ -504,6 +710,10 @@ SCRAPERS = {
     "kfcc": scrape_kfcc,
     "shinhan": scrape_shinhan,
     "kofia": scrape_kofia,
+    "nps": scrape_nps,
+    "mmaa": scrape_mmaa,
+    "ktcu": scrape_ktcu,
+    "kif": scrape_kif,
 }
 
 
