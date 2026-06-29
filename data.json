@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-06-29 14:40 KST",
+  "generated_at": "2026-06-29 23:39 KST",
   "today": "2026-06-29",
   "new_days": 3,
-  "total": 82,
-  "new_count": 2,
+  "total": 79,
+  "new_count": 3,
   "closed_count": 18,
   "sources": [
    {
@@ -74,7 +74,7 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 3,
+    "count": 0,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "shinhan",
+   "id": "205",
+   "title": "2026년 과학기술혁신펀드 출자사업 위탁운용사 접수 결과",
+   "date": "2026-06-29",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=205",
+   "first_seen": "2026-06-29",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
   {
    "source": "kvic",
    "id": "4902",
@@ -845,19 +858,6 @@
    "source_name": "신한벤처투자"
   },
   {
-   "source": "shinhan",
-   "id": "194",
-   "title": "국민성장(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정계획 공고(한국산업은행)",
-   "date": "2026-04-15",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=194",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "신한벤처투자"
-  },
-  {
    "source": "kofia",
    "id": "267",
    "title": "[한국성장금융] 2026년 국민성장펀드(국민참여형) 위탁운용사 선정계획 공고",
@@ -1040,19 +1040,6 @@
    "source_name": "KIF(한국IT펀드)"
   },
   {
-   "source": "ktcu",
-   "id": "57882",
-   "title": "권역별 골프장 투자사업 위탁운용사 선정 공고문",
-   "date": "2025-07-02",
-   "deadline": "",
-   "org": "교직원공제회",
-   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57882",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "교직원공제회"
-  },
-  {
    "source": "kgrowth",
    "id": "936",
    "title": "【기타】혁신 프리미어 1000 투자 희망 기업 관련 안내",
@@ -1079,19 +1066,6 @@
    "source_name": "국민연금(기금운용)"
   },
   {
-   "source": "ktcu",
-   "id": "57425",
-   "title": "2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고",
-   "date": "2025-05-09",
-   "deadline": "",
-   "org": "교직원공제회",
-   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57425",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "교직원공제회"
-  },
-  {
    "source": "kfcc",
    "id": "436",
    "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
@@ -1103,19 +1077,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "새마을금고중앙회"
-  },
-  {
-   "source": "ktcu",
-   "id": "57104",
-   "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
-   "date": "2025-03-21",
-   "deadline": "",
-   "org": "교직원공제회",
-   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57104",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "교직원공제회"
   },
   {
    "source": "kfcc",
