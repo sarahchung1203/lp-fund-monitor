@@ -114,6 +114,17 @@ def _get(url, **kw):
     return r
 
 
+def _get_kr(url, **kw):
+    """한국 전용 사이트용 GET. 직접 접속이 막히면(해외/클라우드 IP 차단) Jina Reader로
+    원문 HTML을 우회 수집한다. (r.jina.ai 는 fn_goView 등 onclick 까지 보존)"""
+    try:
+        return _get(url, **kw)
+    except Exception:
+        r = _get("https://r.jina.ai/" + url,
+                 headers={"X-Return-Format": "html"}, timeout=(10, 60))
+        return r
+
+
 def _norm_date(s):
     """'2026.04.24', '2026-04-24', '2026/04/24' -> '2026-04-24'"""
     if not s:
@@ -583,22 +594,23 @@ def scrape_mmaa(pages=2):
     out, seen, loaded, last_err = [], set(), 0, ""
     for p in range(1, pages + 1):
         try:
-            r = _get(f"{base}?schM=list&page={p}", verify=False, headers=hdr)
+            r = _get_kr(f"{base}?schM=list&page={p}", verify=False, headers=hdr)
         except Exception as e:
             last_err = f"{type(e).__name__}: {str(e)[:100]}"
             continue
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
-        anchors = soup.select("a[onclick*='fn_goView']")
-        if anchors:
+        # onclick 또는 href 안의 fn_goView('id') 모두 인식 (직접/Jina 응답 모두 대응)
+        rows = []
+        for a in soup.find_all("a"):
+            m = re.search(r"fn_goView\(\s*['\"](\d+)['\"]", (a.get("onclick") or "") + (a.get("href") or ""))
+            if m:
+                rows.append((m.group(1), a))
+        if rows:
             loaded += 1
         elif not last_err:
             last_err = f"no anchors (status {r.status_code}, len {len(r.text)})"
-        for a in anchors:
-            m = re.search(r"fn_goView\(\s*['\"](\d+)['\"]", a.get("onclick") or "")
-            if not m:
-                continue
-            gid = m.group(1)
+        for gid, a in rows:
             if gid in seen:
                 continue
             seen.add(gid)
