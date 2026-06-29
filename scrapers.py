@@ -573,17 +573,27 @@ def scrape_nps(pages=3):
 # ----------------------------------------------------------------------------
 def scrape_mmaa(pages=2):
     base = "https://www.mmaa.or.kr/web/contents/notice.do"
-    out, seen, loaded = [], set(), 0
+    # 해외(클라우드) IP에서 WAF/봇 차단을 피하기 위한 브라우저 유사 헤더
+    hdr = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+        "Referer": "https://www.mmaa.or.kr/web/contents/notice.do",
+        "Upgrade-Insecure-Requests": "1",
+    }
+    out, seen, loaded, last_err = [], set(), 0, ""
     for p in range(1, pages + 1):
         try:
-            r = _get(f"{base}?schM=list&page={p}", verify=False)
-        except Exception:
+            r = _get(f"{base}?schM=list&page={p}", verify=False, headers=hdr)
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {str(e)[:100]}"
             continue
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
         anchors = soup.select("a[onclick*='fn_goView']")
         if anchors:
             loaded += 1
+        elif not last_err:
+            last_err = f"no anchors (status {r.status_code}, len {len(r.text)})"
         for a in anchors:
             m = re.search(r"fn_goView\(\s*['\"](\d+)['\"]", a.get("onclick") or "")
             if not m:
@@ -608,7 +618,7 @@ def scrape_mmaa(pages=2):
                         "url": f"{base}?schM=view&page=1&id={gid}"})
         time.sleep(0.5)
     if loaded == 0:
-        raise RuntimeError("군인공제회 접근 실패")
+        raise RuntimeError(f"군인공제회 접근 실패 [{last_err or 'unknown'}]")
     return out
 
 
