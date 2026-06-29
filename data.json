@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-06-29 09:41 KST",
+  "generated_at": "2026-06-29 09:42 KST",
   "today": "2026-06-29",
   "new_days": 3,
   "total": 79,
@@ -67,9 +67,9 @@
     "code": "mmaa",
     "name": "군인공제회",
     "count": 1,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "ok": false,
+    "error": "군인공제회 접근 실패",
+    "carried": 1
    },
    {
     "code": "ktcu",
