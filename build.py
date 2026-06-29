@@ -23,7 +23,7 @@ STATE_FILE = ROOT / "state.json"
 DATA_FILE = ROOT / "data.json"
 HTML_FILE = ROOT / "index.html"
 
-NEW_DAYS = 3  # 처음 수집된 뒤 며칠 동안 NEW 배지를 유지할지
+NEW_DAYS = 3  # 공고 게시일이 최근 며칠 이내면 NEW (게시 후 3일까지만 신규)
 
 SOURCE_ORDER = ["kvic", "kgrowth", "kvca", "kfcc", "shinhan", "kofia",
                 "nps", "mmaa", "ktcu", "kif"]
@@ -172,7 +172,7 @@ def main():
     if tried:
         print(f"첨부 마감일 추출 시도: {tried}건 (신규)")
 
-    # 신규 여부 계산
+    # 신규 여부 계산: '신규' = 공고 게시일(date)이 최근 NEW_DAYS일 이내(=3일 전까지). 그 외는 신규 아님.
     new_count = 0
     closed_count = 0
     cutoff = today - timedelta(days=NEW_DAYS)
@@ -182,10 +182,10 @@ def main():
             first_seen[uid] = today_str
         it["first_seen"] = first_seen[uid]
         try:
-            fs = datetime.strptime(first_seen[uid], "%Y-%m-%d").date()
-        except Exception:
-            fs = today
-        it["is_new"] = fs >= cutoff
+            pdate = datetime.strptime(it.get("date") or "", "%Y-%m-%d").date()
+        except ValueError:
+            pdate = None
+        it["is_new"] = bool(pdate and pdate >= cutoff)   # 게시일 기준
         if it["is_new"]:
             new_count += 1
         # 마감일이 오늘(KST)보다 이전이면 '마감' 처리 (ISO 날짜라 문자열 비교 = 날짜 비교)
