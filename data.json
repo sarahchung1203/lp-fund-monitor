@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-06-29 14:15 KST",
+  "generated_at": "2026-06-29 14:39 KST",
   "today": "2026-06-29",
   "new_days": 3,
-  "total": 79,
+  "total": 82,
   "new_count": 2,
   "closed_count": 18,
   "sources": [
@@ -42,10 +42,10 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-    "count": 9,
-    "ok": false,
-    "error": "연결 시간 초과",
-    "carried": 9
+    "count": 10,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kofia",
@@ -74,7 +74,7 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 0,
+    "count": 3,
     "ok": true,
     "error": "",
     "carried": 0
@@ -1040,6 +1040,19 @@
    "source_name": "KIF(한국IT펀드)"
   },
   {
+   "source": "ktcu",
+   "id": "57882",
+   "title": "권역별 골프장 투자사업 위탁운용사 선정 공고문",
+   "date": "2025-07-02",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57882",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
+  },
+  {
    "source": "kgrowth",
    "id": "936",
    "title": "【기타】혁신 프리미어 1000 투자 희망 기업 관련 안내",
@@ -1066,6 +1079,19 @@
    "source_name": "국민연금(기금운용)"
   },
   {
+   "source": "ktcu",
+   "id": "57425",
+   "title": "2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고",
+   "date": "2025-05-09",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57425",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
+  },
+  {
    "source": "kfcc",
    "id": "436",
    "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
@@ -1077,6 +1103,19 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "새마을금고중앙회"
+  },
+  {
+   "source": "ktcu",
+   "id": "57104",
+   "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
+   "date": "2025-03-21",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57104",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
   },
   {
    "source": "kfcc",

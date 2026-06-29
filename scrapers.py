@@ -14,6 +14,7 @@ LP 출자사업 공고 수집기 (scrapers)
   url          : 원문 공고 페이지 URL
 """
 import re
+import json
 import time
 import requests
 import urllib3
@@ -125,6 +126,19 @@ def _get_kr(url, **kw):
         return r
 
 
+def _get_json_kr(url, **kw):
+    """JSON API용. 직접 접속이 막히면 Jina Reader(text)로 받아 JSON 객체만 추출한다."""
+    try:
+        return _get(url, **kw).json()
+    except Exception:
+        r = _get("https://r.jina.ai/" + url,
+                 headers={"X-Return-Format": "text"}, timeout=(10, 60))
+        m = re.search(r"\{.*\}", r.text, re.S)
+        if not m:
+            raise
+        return json.loads(m.group(0))
+
+
 def _norm_date(s):
     """'2026.04.24', '2026-04-24', '2026/04/24' -> '2026-04-24'"""
     if not s:
@@ -176,7 +190,7 @@ def scrape_kvic(pages=2):
     out = []
     seen = set()
     for p in range(1, pages + 1):
-        r = _get(f"{base}?page={p}")
+        r = _get_kr(f"{base}?page={p}")
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
         for a in soup.select("a[href*='board_view']"):
@@ -209,7 +223,7 @@ def scrape_kgrowth(pages=2):
     out = []
     seen = set()
     for p in range(1, pages + 1):
-        r = _get(f"{base}notice.asp?str_type=1&tab=1&page={p}")
+        r = _get_kr(f"{base}notice.asp?str_type=1&tab=1&page={p}")
         r.encoding = r.apparent_encoding or "euc-kr"
         soup = BeautifulSoup(r.text, "lxml")
         for a in soup.select("a[href*='notice_view']"):
@@ -250,7 +264,7 @@ def scrape_kvca(pages=2):
     out = []
     seen = set()
     for p in range(1, pages + 1):
-        r = _get(f"{listurl}&page={p}")
+        r = _get_kr(f"{listurl}&page={p}")
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
         for tr in soup.select("tr"):
@@ -288,7 +302,7 @@ def scrape_kfcc(pages=6):
     base = "https://www.kfcc.co.kr/mgNotice/"
     out = []
     for p in range(1, pages + 1):
-        r = _get(f"{base}mgNoticeList.do?pageNo={p}")
+        r = _get_kr(f"{base}mgNoticeList.do?pageNo={p}")
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
         rows = [li for li in soup.select("ul.magazine > li")
@@ -324,7 +338,7 @@ def scrape_kfcc(pages=6):
 def _kfcc_deadline(gid):
     """KFCC 상세 페이지 본문에서 접수마감일을 추출 (없으면 '')."""
     try:
-        r = _get(f"https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no={gid}")
+        r = _get_kr(f"https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no={gid}")
         r.encoding = r.apparent_encoding or "utf-8"
         soup = BeautifulSoup(r.text, "lxml")
         for t in soup(["script", "style"]):
@@ -343,8 +357,7 @@ def scrape_shinhan(pages=2):
     out = []
     seen = set()
     for p in range(1, pages + 1):
-        r = _get(f"{api}?pageNo={p}")
-        data = r.json()
+        data = _get_json_kr(f"{api}?pageNo={p}")
         for it in data.get("items", []):
             gid = str(it.get("no"))
             if gid in seen:
@@ -488,7 +501,7 @@ def scrape_kofia(pages=8):
     out, seen, loaded = [], set(), 0
     for p in range(1, pages + 1):
         try:
-            r = _get(base + (qs % p), verify=False)
+            r = _get_kr(base + (qs % p), verify=False)
         except Exception:
             continue
         r.encoding = "utf-8"
@@ -542,7 +555,7 @@ def scrape_nps(pages=3):
     out, seen, loaded = [], set(), 0
     for p in range(1, pages + 1):
         try:
-            r = _get(f"{listurl}?pageIndex={p}", verify=False)
+            r = _get_kr(f"{listurl}?pageIndex={p}", verify=False)
         except Exception:
             continue
         r.encoding = "utf-8"
@@ -638,18 +651,24 @@ def scrape_mmaa(pages=2):
 # 9) 한국교직원공제회 (KTCU) — 공지사항 중 펀드 출자/위탁운용사 선정만
 #    1페이지는 GET, 2페이지~는 POST(curPage)
 # ----------------------------------------------------------------------------
-def scrape_ktcu(pages=3):
+def scrape_ktcu(pages=10):
+    # 일반 공지가 많아 펀드 출자 공고가 뒤 페이지로 밀림 → 페이지 깊게 스캔
     base = "https://www.ktcu.or.kr/PPW-CSB-000101"
     out, seen, loaded = [], set(), 0
     sess = _new_session()
     for p in range(1, pages + 1):
         try:
             if p == 1:
-                r = sess.get(base, timeout=TIMEOUT, verify=False)
+                try:
+                    r = sess.get(base, timeout=TIMEOUT, verify=False)
+                    r.raise_for_status()
+                except Exception:                       # 해외 IP 차단 시 1페이지만 Jina 폴백
+                    r = _get("https://r.jina.ai/" + base,
+                             headers={"X-Return-Format": "html"}, timeout=(10, 60))
             else:
                 r = sess.post(base, timeout=TIMEOUT, verify=False,
                               data={"curPage": str(p), "srchKey": "sj", "srchText": "", "srchCtgry": ""})
-            r.raise_for_status()
+                r.raise_for_status()
         except Exception:
             continue
         r.encoding = "utf-8"
@@ -697,7 +716,7 @@ def scrape_kif(pages=4):
     out, seen, loaded = [], set(), 0
     for p in range(1, pages + 1):
         try:
-            r = _get(f"{api}?pageIndex={p}&listRowSize=10&f=1&q=", headers={**HEADERS, **hdr})
+            r = _get_kr(f"{api}?pageIndex={p}&listRowSize=10&f=1&q=", headers={**HEADERS, **hdr})
         except Exception:
             continue
         r.encoding = "utf-8"
