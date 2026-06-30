@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-29 23:39 KST",
-  "today": "2026-06-29",
+  "generated_at": "2026-06-30 19:45 KST",
+  "today": "2026-06-30",
   "new_days": 3,
-  "total": 79,
+  "total": 83,
   "new_count": 3,
-  "closed_count": 18,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -74,7 +74,7 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 0,
+    "count": 3,
     "ok": true,
     "error": "",
     "carried": 0
@@ -82,7 +82,7 @@
    {
     "code": "kif",
     "name": "KIF(한국IT펀드)",
-    "count": 3,
+    "count": 4,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1070",
+   "title": "【선정공고】「기술혁신전문펀드 7호」1차 (M.AX 산업대전환 혁신, 프로젝트펀드) 위탁운용사 선정계획 공고",
+   "date": "2026-06-30",
+   "deadline": "2026-07-24",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1070&str_type=1&tab=1",
+   "first_seen": "2026-06-30",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvca",
+   "id": "863",
+   "title": "[KIF투자조합]2026년 KIF투자조합 업무집행조합원 선정계획 공고",
+   "date": "2026-06-30",
+   "deadline": "2026-07-20",
+   "org": "KIF투자조합",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=863",
+   "first_seen": "2026-06-30",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
   {
    "source": "shinhan",
    "id": "205",
@@ -112,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4902",
    "first_seen": "2026-06-29",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4901",
    "first_seen": "2026-06-29",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -396,7 +422,7 @@
    "date": "2026-06-12",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1053&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1053&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -643,7 +669,7 @@
    "date": "2026-05-22",
    "deadline": "2026-06-05",
    "org": "하나벤처스",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=853",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=853",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -787,19 +813,6 @@
    "deadline": "2026-05-15",
    "org": "화성시",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=809",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "808",
-   "title": "성남시 판교유니콘펀드 20,21호 업무집행조합원 모집공고",
-   "date": "2026-04-30",
-   "deadline": "2026-05-27",
-   "org": "성남시, 성남산업진흥원",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=808",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -1040,6 +1053,19 @@
    "source_name": "KIF(한국IT펀드)"
   },
   {
+   "source": "ktcu",
+   "id": "57882",
+   "title": "권역별 골프장 투자사업 위탁운용사 선정 공고문",
+   "date": "2025-07-02",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57882",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
+  },
+  {
    "source": "kgrowth",
    "id": "936",
    "title": "【기타】혁신 프리미어 1000 투자 희망 기업 관련 안내",
@@ -1066,6 +1092,19 @@
    "source_name": "국민연금(기금운용)"
   },
   {
+   "source": "ktcu",
+   "id": "57425",
+   "title": "2025년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고",
+   "date": "2025-05-09",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57425",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
+  },
+  {
    "source": "kfcc",
    "id": "436",
    "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
@@ -1077,6 +1116,19 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "새마을금고중앙회"
+  },
+  {
+   "source": "ktcu",
+   "id": "57104",
+   "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
+   "date": "2025-03-21",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/57104",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "교직원공제회"
   },
   {
    "source": "kfcc",
