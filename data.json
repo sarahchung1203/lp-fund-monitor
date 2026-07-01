@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-06-30 19:45 KST",
-  "today": "2026-06-30",
+  "generated_at": "2026-07-01 20:39 KST",
+  "today": "2026-07-01",
   "new_days": 3,
-  "total": 83,
-  "new_count": 3,
-  "closed_count": 17,
+  "total": 84,
+  "new_count": 7,
+  "closed_count": 16,
   "sources": [
    {
     "code": "kvic",
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 12,
+    "count": 13,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,58 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1072",
+   "title": "【선정공고】「핀테크혁신펀드 7차 [Next Finance]」위탁운용사 선정 계획 FAQ 게시",
+   "date": "2026-07-01",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1072&str_type=1&tab=1",
+   "first_seen": "2026-07-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1071",
+   "title": "【선정결과】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정 서류심사 결과",
+   "date": "2026-07-01",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1071&str_type=1&tab=1",
+   "first_seen": "2026-07-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvca",
+   "id": "864",
+   "title": "[제주특별자치도]｢제주 로컬기업 성장펀드｣ 업무집행조합원 모집 공고",
+   "date": "2026-07-01",
+   "deadline": "2026-07-15",
+   "org": "제주특별자치도",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=864",
+   "first_seen": "2026-07-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kofia",
+   "id": "302",
+   "title": "2026년 산재보험기금 대체투자상품(PEF, VC) 선정 공고",
+   "date": "2026-07-01",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=302",
+   "first_seen": "2026-07-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
   {
    "source": "kgrowth",
    "id": "1070",
@@ -357,7 +409,7 @@
    "date": "2026-06-16",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1056&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1056&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -370,7 +422,7 @@
    "date": "2026-06-15",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1054&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1054&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -598,19 +650,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kgrowth",
-   "id": "1036",
-   "title": "【선정결과】「증권금융 K-Growth 펀드」위탁운용사 선정 결과",
-   "date": "2026-05-29",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1036&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "kvca",
    "id": "855",
    "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 계획 공고",
@@ -643,7 +682,7 @@
    "date": "2026-05-27",
    "deadline": "2026-06-19",
    "org": "키움인베스트먼트",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=854",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=854",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -806,19 +845,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvca",
-   "id": "809",
-   "title": "『2026년 화성특례시 제1호 화성형 기본 임팩트펀드 투자조합』 운용 업무집행조합원 모집 공고",
-   "date": "2026-04-30",
-   "deadline": "2026-05-15",
-   "org": "화성시",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=809",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
    "source": "shinhan",
    "id": "197",
    "title": "국민성장펀드(간접투자분야) 정책성 펀드 2026년 1차 위탁운용사 제안서 접수결과",
@@ -852,19 +878,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=196",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "신한벤처투자"
-  },
-  {
-   "source": "shinhan",
-   "id": "195",
-   "title": "국민성장(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정계획 공고(신한자산운용)",
-   "date": "2026-04-15",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=195",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
