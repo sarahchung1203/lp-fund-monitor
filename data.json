@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-01 20:39 KST",
-  "today": "2026-07-01",
+  "generated_at": "2026-07-02 19:18 KST",
+  "today": "2026-07-02",
   "new_days": 3,
   "total": 84,
-  "new_count": 7,
+  "new_count": 9,
   "closed_count": 16,
   "sources": [
    {
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "4908",
+   "title": "모태펀드(보건복지부) 2026년 5월 수시 출자사업 서류심사 결과",
+   "date": "2026-07-02",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4908",
+   "first_seen": "2026-07-02",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "4907",
+   "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 서류심사 결과",
+   "date": "2026-07-02",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4907",
+   "first_seen": "2026-07-02",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kgrowth",
    "id": "1072",
@@ -440,32 +466,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvic",
-   "id": "4883",
-   "title": "모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 계획 공고",
-   "date": "2026-06-12",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4883",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4882",
-   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 서류심사 결과",
-   "date": "2026-06-12",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4882",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
