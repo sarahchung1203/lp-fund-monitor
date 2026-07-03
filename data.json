@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-07-02 19:18 KST",
-  "today": "2026-07-02",
+  "generated_at": "2026-07-03 19:13 KST",
+  "today": "2026-07-03",
   "new_days": 3,
-  "total": 84,
+  "total": 85,
   "new_count": 9,
   "closed_count": 16,
   "sources": [
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 13,
+    "count": 14,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kofia",
+   "id": "304",
+   "title": "[우정사업본부] 2026년도 국내PEF 운용사별 펀딩 현황 자료 요청",
+   "date": "2026-07-03",
+   "deadline": "",
+   "org": "우정사업본부",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=304",
+   "first_seen": "2026-07-03",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
   {
    "source": "kvic",
    "id": "4908",
@@ -203,7 +216,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=205",
    "first_seen": "2026-06-29",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
