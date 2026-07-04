@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-03 19:13 KST",
-  "today": "2026-07-03",
+  "generated_at": "2026-07-04 18:07 KST",
+  "today": "2026-07-04",
   "new_days": 3,
   "total": 85,
-  "new_count": 9,
-  "closed_count": 16,
+  "new_count": 7,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -190,7 +190,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1070&str_type=1&tab=1",
    "first_seen": "2026-06-30",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -203,7 +203,7 @@
    "org": "KIF투자조합",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=863",
    "first_seen": "2026-06-30",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -503,7 +503,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=860",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -516,7 +516,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=859",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -659,7 +659,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=856",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
