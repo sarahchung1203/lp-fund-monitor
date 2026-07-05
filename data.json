@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-04 18:07 KST",
-  "today": "2026-07-04",
+  "generated_at": "2026-07-05 18:45 KST",
+  "today": "2026-07-05",
   "new_days": 3,
   "total": 85,
-  "new_count": 7,
+  "new_count": 3,
   "closed_count": 19,
   "sources": [
    {
@@ -138,7 +138,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1072&str_type=1&tab=1",
    "first_seen": "2026-07-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -151,7 +151,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1071&str_type=1&tab=1",
    "first_seen": "2026-07-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -164,7 +164,7 @@
    "org": "제주특별자치도",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=864",
    "first_seen": "2026-07-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -177,7 +177,7 @@
    "org": "",
    "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=302",
    "first_seen": "2026-07-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
   },
