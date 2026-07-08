@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-07 19:40 KST",
-  "today": "2026-07-07",
+  "generated_at": "2026-07-08 16:58 KST",
+  "today": "2026-07-08",
   "new_days": 3,
-  "total": 83,
-  "new_count": 9,
-  "closed_count": 16,
+  "total": 82,
+  "new_count": 10,
+  "closed_count": 15,
   "sources": [
    {
     "code": "kvic",
@@ -91,6 +91,32 @@
  },
  "items": [
   {
+   "source": "kgrowth",
+   "id": "1078",
+   "title": "【제출서식】「기술혁신전문펀드 7호」(M.AX 산업대전환 혁신, 프로젝트펀드) 제출서류 및 서식",
+   "date": "2026-07-08",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1078&str_type=1&tab=1",
+   "first_seen": "2026-07-08",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvca",
+   "id": "868",
+   "title": "2026년 한국교직원공제회 VC 블라인드펀드 위탁운용사 선정 공고",
+   "date": "2026-07-07",
+   "deadline": "2026-07-16",
+   "org": "한국교직원공제회",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=868",
+   "first_seen": "2026-07-08",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kvic",
    "id": "5036",
    "title": "모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 질의응답 게시의 건",
@@ -154,19 +180,6 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "ktcu",
-   "id": "61383",
-   "title": "2026년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고",
-   "date": "2026-07-07",
-   "deadline": "",
-   "org": "교직원공제회",
-   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/61383",
-   "first_seen": "2026-07-07",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "교직원공제회"
   },
   {
    "source": "kgrowth",
@@ -435,7 +448,7 @@
    "date": "2026-06-24",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1068&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1068&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -650,19 +663,6 @@
    "source_name": "신한벤처투자"
   },
   {
-   "source": "kgrowth",
-   "id": "1051",
-   "title": "【선정공고】「IBK 국민성장펀드 1호」 국민성장 매칭 1차 위탁운용사 선정계획 공고",
-   "date": "2026-06-10",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1051&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "kvca",
    "id": "858",
    "title": "[부천산업진흥원] 부천벤처펀드4호 업무집행조합원 모집 공고",
@@ -708,7 +708,7 @@
    "date": "2026-05-27",
    "deadline": "2026-06-10",
    "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=857",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=857",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -813,19 +813,6 @@
    "deadline": "2026-05-29",
    "org": "농업정책보험금융원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=844",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "812",
-   "title": "「K-방산수출펀드」 2차년도 위탁운용사 선정계획 공고",
-   "date": "2026-05-13",
-   "deadline": "2026-06-05",
-   "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=812",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
