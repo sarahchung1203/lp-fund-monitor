@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-08 16:58 KST",
-  "today": "2026-07-08",
+  "generated_at": "2026-07-09 19:40 KST",
+  "today": "2026-07-09",
   "new_days": 3,
-  "total": 82,
-  "new_count": 10,
-  "closed_count": 15,
+  "total": 83,
+  "new_count": 16,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 13,
+    "count": 14,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,84 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5043",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 서류심사 결과",
+   "date": "2026-07-09",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5043",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5042",
+   "title": "지역 모펀드(강원 전략산업, 경남-KDB 지역혁신 벤처펀드) 2026년 출자사업 서류심사 결과",
+   "date": "2026-07-09",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5042",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1081",
+   "title": "【접수현황】「성장사다리펀드2」 2024년(1차년도(재공고)) 위탁운용사 접수 현황",
+   "date": "2026-07-09",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1081&str_type=1&tab=1",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1080",
+   "title": "【접수현황】「성장사다리펀드2」 2026년(3차년도) 위탁운용사 접수 현황",
+   "date": "2026-07-09",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1080&str_type=1&tab=1",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kofia",
+   "id": "311",
+   "title": "[수협중앙회] 2026년 하반기 전문사모운용사 및 자문사 대상 위탁운용사 POOL 선정",
+   "date": "2026-07-09",
+   "deadline": "",
+   "org": "수협중앙회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=311",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1079",
+   "title": "【접수현황】「핀테크혁신펀드 7차 [Next Finance]」위탁운용사 접수 현황",
+   "date": "2026-07-08",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1079&str_type=1&tab=1",
+   "first_seen": "2026-07-09",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kgrowth",
    "id": "1078",
@@ -292,7 +370,7 @@
    "date": "2026-07-01",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1071&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1071&str_type=1&tab=1",
    "first_seen": "2026-07-01",
    "is_new": false,
    "is_closed": false,
@@ -318,7 +396,7 @@
    "date": "2026-06-30",
    "deadline": "2026-07-24",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1070&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1070&str_type=1&tab=1",
    "first_seen": "2026-06-30",
    "is_new": false,
    "is_closed": false,
@@ -383,7 +461,7 @@
    "date": "2026-06-25",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1069&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1069&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -410,32 +488,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4895",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4894",
-   "title": "지역 모펀드(부산 미래성장, 부산 혁신 스케일업, 충남 기업성장) 2026년 출자사업 선정 결과",
-   "date": "2026-06-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4894",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "4893",
-   "title": "모태펀드(보건복지부) 2026년 2차 정시 출자사업 선정 결과",
-   "date": "2026-06-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4893",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
@@ -490,7 +542,7 @@
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1059&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -516,7 +568,7 @@
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1058&str_type=1&tab=1",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -529,7 +581,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=862",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -559,19 +611,6 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "kgrowth",
-   "id": "1054",
-   "title": "【제출서식】(수정게시)「은행권 중견기업 밸류업펀드(3차)」 제출서류 및 서식",
-   "date": "2026-06-15",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1054&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "kvca",
    "id": "861",
    "title": "2026년 제2차 전북 혁신성공 벤처펀드 출자사업 운용사 선정 계획 공고",
@@ -583,19 +622,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1053",
-   "title": "【제출서식】「은행권 기후기술펀드 3호」 제출서류 및 서식",
-   "date": "2026-06-12",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1053&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kvca",
@@ -622,19 +648,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1052",
-   "title": "【접수현황】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 접수 현황",
-   "date": "2026-06-11",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1052&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "shinhan",
@@ -672,7 +685,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=858",
    "first_seen": "2026-06-29",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
