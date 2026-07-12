@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-11 09:54 KST",
-  "today": "2026-07-11",
+  "generated_at": "2026-07-12 09:59 KST",
+  "today": "2026-07-12",
   "new_days": 3,
   "total": 84,
-  "new_count": 9,
+  "new_count": 7,
   "closed_count": 18,
   "sources": [
    {
@@ -190,7 +190,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1079&str_type=1&tab=1",
    "first_seen": "2026-07-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -203,7 +203,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1078&str_type=1&tab=1",
    "first_seen": "2026-07-08",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
