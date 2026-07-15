@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-14 09:13 KST",
-  "today": "2026-07-14",
+  "generated_at": "2026-07-15 09:11 KST",
+  "today": "2026-07-15",
   "new_days": 3,
-  "total": 83,
-  "new_count": 2,
-  "closed_count": 16,
+  "total": 84,
+  "new_count": 3,
+  "closed_count": 15,
   "sources": [
    {
     "code": "kvic",
@@ -91,6 +91,19 @@
  },
  "items": [
   {
+   "source": "kvic",
+   "id": "5045",
+   "title": "2026년 해외VC 글로벌 펀드 출자사업 (1차) 최종 선정결과",
+   "date": "2026-07-14",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5045",
+   "first_seen": "2026-07-15",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "kgrowth",
    "id": "1083",
    "title": "【선정공고】「2026년 국민성장펀드(국민참여형) 2차」위탁운용사 선정계획 FAQ 게시",
@@ -115,6 +128,19 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvca",
+   "id": "871",
+   "title": "『2026년 농림수산식품모태펀드 3차 추가 출자사업 계획(농식품투자 계정) 』공고",
+   "date": "2026-07-10",
+   "deadline": "2026-08-03",
+   "org": "농업정책보험금융원",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=871",
+   "first_seen": "2026-07-15",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kgrowth",
@@ -533,19 +559,6 @@
    "source_name": "한국벤처투자(모태펀드)"
   },
   {
-   "source": "kvic",
-   "id": "4895",
-   "title": "2026년 글로벌 리그 펀드 출자사업 접수 현황",
-   "date": "2026-06-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4895",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1068",
    "title": "【제출서식】「핀테크혁신펀드 7차 [Next Finance]」제출서류 및 서식",
@@ -656,7 +669,7 @@
    "date": "2026-06-12",
    "deadline": "2026-07-03",
    "org": "충청남도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=860",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=860",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -819,6 +832,19 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kofia",
+   "id": "282",
+   "title": "[중소기업중앙회] 2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고",
+   "date": "2026-05-15",
+   "deadline": "",
+   "org": "중소기업중앙회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=282",
+   "first_seen": "2026-07-15",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
    "source": "kvca",
    "id": "851",
    "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고",
@@ -826,19 +852,6 @@
    "deadline": "2026-06-05",
    "org": "한국벤처투자",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=851",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "850",
-   "title": "[중소기업중앙회] 2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고",
-   "date": "2026-05-15",
-   "deadline": "2026-06-05",
-   "org": "중소기업중앙회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=850",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
