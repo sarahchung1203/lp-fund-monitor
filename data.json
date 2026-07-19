@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-18 09:51 KST",
-  "today": "2026-07-18",
+  "generated_at": "2026-07-19 09:14 KST",
+  "today": "2026-07-19",
   "new_days": 3,
   "total": 84,
-  "new_count": 6,
+  "new_count": 3,
   "closed_count": 17,
   "sources": [
    {
@@ -138,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5049",
    "first_seen": "2026-07-16",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -151,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5048",
    "first_seen": "2026-07-16",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -164,7 +164,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1085&str_type=1&tab=1",
    "first_seen": "2026-07-16",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
