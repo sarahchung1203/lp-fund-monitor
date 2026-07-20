@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-19 09:14 KST",
-  "today": "2026-07-19",
+  "generated_at": "2026-07-20 10:01 KST",
+  "today": "2026-07-20",
   "new_days": 3,
   "total": 84,
-  "new_count": 3,
+  "new_count": 0,
   "closed_count": 17,
   "sources": [
    {
@@ -99,7 +99,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1086&str_type=1&tab=1",
    "first_seen": "2026-07-17",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -112,7 +112,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=209",
    "first_seen": "2026-07-17",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=208",
    "first_seen": "2026-07-17",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
