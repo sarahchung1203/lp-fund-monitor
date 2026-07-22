@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-07-21 09:56 KST",
-  "today": "2026-07-21",
+  "generated_at": "2026-07-22 09:14 KST",
+  "today": "2026-07-22",
   "new_days": 3,
-  "total": 83,
-  "new_count": 2,
+  "total": 84,
+  "new_count": 6,
   "closed_count": 19,
   "sources": [
    {
@@ -82,7 +82,7 @@
    {
     "code": "kif",
     "name": "KIF(한국IT펀드)",
-    "count": 4,
+    "count": 5,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,58 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1089",
+   "title": "【선정공고】「K-컬처 밸류업 펀드」위탁운용사 선정계획 공고",
+   "date": "2026-07-22",
+   "deadline": "2026-08-12",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1089&str_type=1&tab=1",
+   "first_seen": "2026-07-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvic",
+   "id": "5052",
+   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 선정 결과",
+   "date": "2026-07-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5052",
+   "first_seen": "2026-07-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1088",
+   "title": "【접수현황】「2026년 국민성장펀드(국민참여형) 2차」위탁운용사 접수 현황",
+   "date": "2026-07-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1088&str_type=1&tab=1",
+   "first_seen": "2026-07-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kif",
+   "id": "50135",
+   "title": "2026년 KIF투자조합 업무집행조합원 선정 제안서 접수결과",
+   "date": "2026-07-21",
+   "deadline": "",
+   "org": "KIF(KTOA)",
+   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50135",
+   "first_seen": "2026-07-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "KIF(한국IT펀드)"
+  },
   {
    "source": "kofia",
    "id": "319",
@@ -344,7 +396,7 @@
    "date": "2026-07-08",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1079&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1079&str_type=1&tab=1",
    "first_seen": "2026-07-09",
    "is_new": false,
    "is_closed": false,
@@ -353,11 +405,11 @@
   {
    "source": "kgrowth",
    "id": "1078",
-   "title": "【제출서식】「기술혁신전문펀드 7호」(M.AX 산업대전환 혁신, 프로젝트펀드) 제출서류 및 서식",
+   "title": "【제출서식】「기술혁신전문펀드 7호」 제출서류 및 서식",
    "date": "2026-07-08",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1078&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1078&str_type=1&tab=1",
    "first_seen": "2026-07-08",
    "is_new": false,
    "is_closed": false,
@@ -609,45 +661,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kvic",
-   "id": "4902",
-   "title": "한국모태펀드(교육부) 2026년 2차 정시 출자사업 선정 결과",
-   "date": "2026-06-26",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=4902",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1069",
-   "title": "【선정결과】「K-방산수출펀드(2차)」 위탁운용사 선정 결과",
-   "date": "2026-06-25",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1069&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1068",
-   "title": "【제출서식】「핀테크혁신펀드 7차 [Next Finance]」제출서류 및 서식",
-   "date": "2026-06-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1068&str_type=1&tab=1",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kofia",
