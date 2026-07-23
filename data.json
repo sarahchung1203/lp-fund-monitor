@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-22 09:14 KST",
-  "today": "2026-07-22",
+  "generated_at": "2026-07-23 09:58 KST",
+  "today": "2026-07-23",
   "new_days": 3,
-  "total": 84,
-  "new_count": 6,
-  "closed_count": 19,
+  "total": 85,
+  "new_count": 9,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -90,6 +90,45 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1090",
+   "title": "【선정결과】「은행권 중견기업 밸류업펀드(3차)」 위탁운용사 서류심사 결과",
+   "date": "2026-07-23",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1090&str_type=1&tab=1",
+   "first_seen": "2026-07-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "shinhan",
+   "id": "210",
+   "title": "(재공고)과학기술혁신펀드 2026년 위탁운용사 선정계획 FAQ",
+   "date": "2026-07-23",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=210",
+   "first_seen": "2026-07-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
+   "source": "kvca",
+   "id": "880",
+   "title": "2026 SBA Global Startup Fund 공고",
+   "date": "2026-07-22",
+   "deadline": "2026-08-21",
+   "org": "서울경제진흥원",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=880",
+   "first_seen": "2026-07-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
   {
    "source": "kgrowth",
    "id": "1089",
@@ -370,7 +409,7 @@
    "date": "2026-07-09",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1080&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1080&str_type=1&tab=1",
    "first_seen": "2026-07-09",
    "is_new": false,
    "is_closed": false,
@@ -708,7 +747,7 @@
    "date": "2026-06-15",
    "deadline": "2026-06-26",
    "org": "전북특별자치도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=861",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=861",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -832,19 +871,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "shinhan",
-   "id": "200",
-   "title": "국민성장펀드(간접투자분야) 정책성펀드 2026년 1차 위탁운용사 선정 결과",
-   "date": "2026-05-27",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=200",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "신한벤처투자"
-  },
-  {
    "source": "kvca",
    "id": "853",
    "title": "하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고",
@@ -895,19 +921,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
-  },
-  {
-   "source": "kvca",
-   "id": "851",
-   "title": "모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 계획 공고",
-   "date": "2026-05-15",
-   "deadline": "2026-06-05",
-   "org": "한국벤처투자",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=851",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kofia",
