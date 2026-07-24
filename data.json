@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-23 09:58 KST",
-  "today": "2026-07-23",
+  "generated_at": "2026-07-24 09:54 KST",
+  "today": "2026-07-24",
   "new_days": 3,
   "total": 85,
   "new_count": 9,
-  "closed_count": 18,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1091",
+   "title": "【선정공고】「기술혁신전문펀드 7호」2차 (5극3특 지역산업활력펀드) 위탁운용사 선정계획 공고",
+   "date": "2026-07-23",
+   "deadline": "2026-08-14",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1091&str_type=1&tab=1",
+   "first_seen": "2026-07-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kgrowth",
    "id": "1090",
@@ -203,7 +216,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1087&str_type=1&tab=1",
    "first_seen": "2026-07-21",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -396,7 +409,7 @@
    "date": "2026-07-09",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1081&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1081&str_type=1&tab=1",
    "first_seen": "2026-07-09",
    "is_new": false,
    "is_closed": false,
@@ -611,6 +624,19 @@
    "source_name": "한국벤처투자(모태펀드)"
   },
   {
+   "source": "shinhan",
+   "id": "206",
+   "title": "국민성장펀드(간접투자분야) 정책성펀드 2026년 2차 위탁운용사 선정 서류심사 결과",
+   "date": "2026-07-01",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=206",
+   "first_seen": "2026-07-24",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "신한벤처투자"
+  },
+  {
    "source": "kvca",
    "id": "865",
    "title": "2026년 산재보험기금 대체투자상품(PEF, VC) 선정 공고",
@@ -631,19 +657,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1072&str_type=1&tab=1",
-   "first_seen": "2026-07-01",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1071",
-   "title": "【선정결과】「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정 서류심사 결과",
-   "date": "2026-07-01",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1071&str_type=1&tab=1",
    "first_seen": "2026-07-01",
    "is_new": false,
    "is_closed": false,
@@ -721,7 +734,7 @@
    "date": "2026-06-17",
    "deadline": "2026-07-08",
    "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=862",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=862",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
@@ -895,19 +908,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
-  },
-  {
-   "source": "kvca",
-   "id": "852",
-   "title": "「2026 IBK 동행펀드」출자사업 위탁운용사 선정계획 공고",
-   "date": "2026-05-18",
-   "deadline": "2026-05-29",
-   "org": "IBK기업은행",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=852",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kofia",
