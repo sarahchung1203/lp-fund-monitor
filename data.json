@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-07-31 10:01 KST",
-  "today": "2026-07-31",
+  "generated_at": "2026-08-01 09:59 KST",
+  "today": "2026-08-01",
   "new_days": 3,
-  "total": 88,
+  "total": 89,
   "new_count": 7,
-  "closed_count": 18,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -66,7 +66,7 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
+    "count": 2,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1100",
+   "title": "【선정결과】「은행권 중견기업 밸류업펀드(3차)」 위탁운용사 선정 결과",
+   "date": "2026-07-31",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1100&str_type=1&tab=1",
+   "first_seen": "2026-08-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "mmaa",
+   "id": "731490",
+   "title": "’26년 군인공제회 국내 PE·VC 블라인드 펀드 선정계획 공고",
+   "date": "2026-07-31",
+   "deadline": "",
+   "org": "군인공제회",
+   "url": "https://www.mmaa.or.kr/web/contents/notice.do?schM=view&page=1&id=731490",
+   "first_seen": "2026-08-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "군인공제회"
+  },
   {
    "source": "kgrowth",
    "id": "1099",
@@ -164,7 +190,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=211",
    "first_seen": "2026-07-29",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
@@ -177,7 +203,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1095&str_type=1&tab=1",
    "first_seen": "2026-07-28",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -266,7 +292,7 @@
    "date": "2026-07-23",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1090&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1090&str_type=1&tab=1",
    "first_seen": "2026-07-23",
    "is_new": false,
    "is_closed": false,
@@ -529,7 +555,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=869",
    "first_seen": "2026-07-11",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -566,19 +592,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1081&str_type=1&tab=1",
-   "first_seen": "2026-07-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1080",
-   "title": "【접수현황】「성장사다리펀드2」 2026년(3차년도) 위탁운용사 접수 현황",
-   "date": "2026-07-09",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1080&str_type=1&tab=1",
    "first_seen": "2026-07-09",
    "is_new": false,
    "is_closed": false,
