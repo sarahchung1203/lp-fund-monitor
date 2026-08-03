@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-08-02 10:03 KST",
-  "today": "2026-08-02",
+  "generated_at": "2026-08-03 10:03 KST",
+  "today": "2026-08-03",
   "new_days": 3,
   "total": 89,
-  "new_count": 6,
+  "new_count": 2,
   "closed_count": 19,
   "sources": [
    {
@@ -42,10 +42,10 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-    "count": 9,
-    "ok": false,
-    "error": "403 Client Error: Forbidden for url: https://r.jina.ai/https://www.shinhanfund.c",
-    "carried": 9
+    "count": 10,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kofia",
@@ -67,9 +67,9 @@
     "code": "mmaa",
     "name": "군인공제회",
     "count": 2,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 2
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1099&str_type=1&tab=1",
    "first_seen": "2026-07-31",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -138,7 +138,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1098&str_type=1&tab=1",
    "first_seen": "2026-07-31",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -151,7 +151,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1097&str_type=1&tab=1",
    "first_seen": "2026-07-31",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -164,7 +164,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=212",
    "first_seen": "2026-07-31",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
