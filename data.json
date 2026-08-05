@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-04 09:57 KST",
-  "today": "2026-08-04",
+  "generated_at": "2026-08-05 09:52 KST",
+  "today": "2026-08-05",
   "new_days": 3,
-  "total": 89,
-  "new_count": 1,
-  "closed_count": 20,
+  "total": 88,
+  "new_count": 2,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -91,6 +91,19 @@
  },
  "items": [
   {
+   "source": "kvca",
+   "id": "893",
+   "title": "’26년 군인공제회 국내 PE·VC 블라인드 펀드 선정계획 공고",
+   "date": "2026-08-31",
+   "deadline": "2026-08-14",
+   "org": "군인공제회",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=893",
+   "first_seen": "2026-08-05",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kvic",
    "id": "5073",
    "title": "지역 모펀드(강원 전략산업, 경남-KDB 지역혁신 벤처펀드) 2026년 출자사업 선정 결과",
@@ -117,17 +130,17 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "mmaa",
-   "id": "731490",
-   "title": "’26년 군인공제회 국내 PE·VC 블라인드 펀드 선정계획 공고",
-   "date": "2026-07-31",
-   "deadline": "",
-   "org": "군인공제회",
-   "url": "https://www.mmaa.or.kr/web/contents/notice.do?schM=view&page=1&id=731490",
-   "first_seen": "2026-08-01",
+   "source": "kvca",
+   "id": "892",
+   "title": "(우정사업본부 공고 2026-103호) 2026년 우체국보험 국내VC 위탁운용사 선정 공고",
+   "date": "2026-07-30",
+   "deadline": "2026-08-13",
+   "org": "우정사업본부",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=892",
+   "first_seen": "2026-08-05",
    "is_new": false,
    "is_closed": false,
-   "source_name": "군인공제회"
+   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kgrowth",
@@ -734,7 +747,7 @@
    "date": "2026-07-01",
    "deadline": "2026-07-15",
    "org": "제주특별자치도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=864",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=864",
    "first_seen": "2026-07-01",
    "is_new": false,
    "is_closed": true,
@@ -760,7 +773,7 @@
    "date": "2026-06-30",
    "deadline": "2026-07-20",
    "org": "KIF투자조합",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=863",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=863",
    "first_seen": "2026-06-30",
    "is_new": false,
    "is_closed": true,
@@ -917,32 +930,6 @@
    "deadline": "2026-06-10",
    "org": "한국성장금융",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=857",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "854",
-   "title": "[키움인베스트먼트]키움 벤처히어로 모펀드 출자사업 공고",
-   "date": "2026-05-27",
-   "deadline": "2026-06-19",
-   "org": "키움인베스트먼트",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=854",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "853",
-   "title": "하나 모두 성장 K-미래전략산업 벤처 모펀드(민간벤처모펀드) 2026년-1차 출자사업 공고",
-   "date": "2026-05-22",
-   "deadline": "2026-06-05",
-   "org": "하나벤처스",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=853",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
