@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-10 08:56 KST",
-  "today": "2026-08-10",
+  "generated_at": "2026-08-11 08:58 KST",
+  "today": "2026-08-11",
   "new_days": 3,
   "total": 87,
-  "new_count": 5,
-  "closed_count": 17,
+  "new_count": 2,
+  "closed_count": 16,
   "sources": [
    {
     "code": "kvic",
@@ -104,6 +104,19 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kvca",
+   "id": "895",
+   "title": "신한벤처 넥서스 모펀드 1호 2026년 하반기 출자사업 공고",
+   "date": "2026-08-10",
+   "deadline": "2026-08-21",
+   "org": "신한벤처투자",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=895",
+   "first_seen": "2026-08-11",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kvic",
    "id": "5082",
    "title": "2026년 해외VC 글로벌 펀드 출자사업 (2차) 접수 현황",
@@ -112,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5082",
    "first_seen": "2026-08-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5079",
    "first_seen": "2026-08-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5078",
    "first_seen": "2026-08-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -151,7 +164,7 @@
    "org": "미래에셋증권",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=894",
    "first_seen": "2026-08-08",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -708,7 +721,7 @@
    "date": "2026-07-06",
    "deadline": "2026-07-20",
    "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=866",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=866",
    "first_seen": "2026-07-06",
    "is_new": false,
    "is_closed": true,
@@ -904,19 +917,6 @@
    "deadline": "2026-07-08",
    "org": "부천산업진흥원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=858",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "856",
-   "title": "「K-콘텐츠 미디어 전략펀드 3호」위탁운용사 선정계획 공고",
-   "date": "2026-05-29",
-   "deadline": "2026-07-03",
-   "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=856",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
