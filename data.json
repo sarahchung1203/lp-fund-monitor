@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-08-11 08:58 KST",
-  "today": "2026-08-11",
+  "generated_at": "2026-08-12 09:05 KST",
+  "today": "2026-08-12",
   "new_days": 3,
   "total": 87,
-  "new_count": 2,
+  "new_count": 3,
   "closed_count": 16,
   "sources": [
    {
@@ -42,10 +42,10 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-    "count": 10,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 9,
+    "ok": false,
+    "error": "403 Client Error: Forbidden for url: https://r.jina.ai/https://www.shinhanfund.c",
+    "carried": 9
    },
    {
     "code": "kofia",
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -102,6 +102,19 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kif",
+   "id": "50136",
+   "title": "2026년 KIF투자조합 업무집행조합원 1차 심의 결과",
+   "date": "2026-08-11",
+   "deadline": "",
+   "org": "KIF(KTOA)",
+   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50136",
+   "first_seen": "2026-08-12",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "KIF(한국IT펀드)"
   },
   {
    "source": "kvca",
@@ -1086,19 +1099,6 @@
    "deadline": "",
    "org": "KIF(KTOA)",
    "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50098",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "KIF(한국IT펀드)"
-  },
-  {
-   "source": "kif",
-   "id": "50096",
-   "title": "2025년 KIF투자조합 업무집행조합원 선정 제안서 접수결과",
-   "date": "2025-08-29",
-   "deadline": "",
-   "org": "KIF(KTOA)",
-   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50096",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
