@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-12 09:05 KST",
-  "today": "2026-08-12",
+  "generated_at": "2026-08-13 09:05 KST",
+  "today": "2026-08-13",
   "new_days": 3,
-  "total": 87,
-  "new_count": 3,
-  "closed_count": 16,
+  "total": 86,
+  "new_count": 5,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -42,15 +42,15 @@
    {
     "code": "shinhan",
     "name": "신한벤처투자",
-    "count": 9,
-    "ok": false,
-    "error": "403 Client Error: Forbidden for url: https://r.jina.ai/https://www.shinhanfund.c",
-    "carried": 9
+    "count": 10,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 14,
+    "count": 13,
     "ok": true,
     "error": "",
     "carried": 0
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 1
+    "count": 2,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
@@ -102,6 +102,32 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1104",
+   "title": "【선정결과】「성장사다리펀드2」 2024년(1차년도(재공고)) 위탁운용사 선정 결과",
+   "date": "2026-08-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1104&str_type=1&tab=1",
+   "first_seen": "2026-08-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1103",
+   "title": "【선정결과】「성장사다리펀드2」 2026년(3차년도) 위탁운용사 선정 결과",
+   "date": "2026-08-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1103&str_type=1&tab=1",
+   "first_seen": "2026-08-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
   },
   {
    "source": "kif",
@@ -383,7 +409,7 @@
    "date": "2026-07-24",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1092&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1092&str_type=1&tab=1",
    "first_seen": "2026-07-25",
    "is_new": false,
    "is_closed": false,
@@ -396,7 +422,7 @@
    "date": "2026-07-23",
    "deadline": "2026-08-14",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1091&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1091&str_type=1&tab=1",
    "first_seen": "2026-07-24",
    "is_new": false,
    "is_closed": false,
@@ -451,7 +477,7 @@
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1089&str_type=1&tab=1",
    "first_seen": "2026-07-22",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -650,19 +676,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kgrowth",
-   "id": "1082",
-   "title": "【선정공고】「지역활성화 투자 펀드」 2024년 위탁운용사 선정계획 변경공고",
-   "date": "2026-07-10",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1082&str_type=1&tab=1",
-   "first_seen": "2026-07-11",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "kvca",
    "id": "869",
    "title": "2026년도 중소기업중앙회 국내 블라인드 펀드 선정 공고",
@@ -674,19 +687,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1081",
-   "title": "【접수현황】「성장사다리펀드2」 2024년(1차년도(재공고)) 위탁운용사 접수 현황",
-   "date": "2026-07-09",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1081&str_type=1&tab=1",
-   "first_seen": "2026-07-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kofia",
@@ -1051,19 +1051,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "군인공제회"
-  },
-  {
-   "source": "kofia",
-   "id": "250",
-   "title": "[중소벤처기업진흥공단] 26년 스케일업금융 발행계획 공고",
-   "date": "2026-03-18",
-   "deadline": "",
-   "org": "중소벤처기업진흥공단",
-   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=250",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "금융투자협회(KOFIA)"
   },
   {
    "source": "kif",
