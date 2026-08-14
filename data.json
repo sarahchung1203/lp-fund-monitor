@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-13 09:05 KST",
-  "today": "2026-08-13",
+  "generated_at": "2026-08-14 09:05 KST",
+  "today": "2026-08-14",
   "new_days": 3,
-  "total": 86,
-  "new_count": 5,
-  "closed_count": 17,
+  "total": 87,
+  "new_count": 6,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -18,7 +18,7 @@
    {
     "code": "kgrowth",
     "name": "한국성장금융",
-    "count": 24,
+    "count": 25,
     "ok": true,
     "error": "",
     "carried": 0
@@ -104,6 +104,32 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kvic",
+   "id": "5089",
+   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 계획 공고",
+   "date": "2026-08-13",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5089",
+   "first_seen": "2026-08-14",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1106",
+   "title": "【접수현황】「K-컬처 밸류업 펀드」위탁운용사 접수 현황",
+   "date": "2026-08-13",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1106&str_type=1&tab=1",
+   "first_seen": "2026-08-14",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
    "source": "kgrowth",
    "id": "1104",
    "title": "【선정결과】「성장사다리펀드2」 2024년(1차년도(재공고)) 위탁운용사 선정 결과",
@@ -151,7 +177,7 @@
    "org": "신한벤처투자",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=895",
    "first_seen": "2026-08-11",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -256,7 +282,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=892",
    "first_seen": "2026-08-05",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -396,7 +422,7 @@
    "date": "2026-07-24",
    "deadline": "2026-08-18",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1093&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1093&str_type=1&tab=1",
    "first_seen": "2026-07-25",
    "is_new": false,
    "is_closed": false,
@@ -622,19 +648,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5045",
-   "title": "2026년 해외VC 글로벌 펀드 출자사업 (1차) 최종 선정결과",
-   "date": "2026-07-14",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5045",
-   "first_seen": "2026-07-15",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
