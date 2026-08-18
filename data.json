@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-08-17 08:41 KST",
-  "today": "2026-08-17",
+  "generated_at": "2026-08-18 08:43 KST",
+  "today": "2026-08-18",
   "new_days": 3,
   "total": 88,
-  "new_count": 6,
+  "new_count": 1,
   "closed_count": 21,
   "sources": [
    {
@@ -66,18 +66,18 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 4,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 3,
+    "ok": false,
+    "error": "교직원공제회 접근 실패",
+    "carried": 3
    },
    {
     "code": "kif",
@@ -112,7 +112,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5091",
    "first_seen": "2026-08-15",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5090",
    "first_seen": "2026-08-15",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +138,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1108&str_type=1&tab=1",
    "first_seen": "2026-08-15",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -151,7 +151,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1107&str_type=1&tab=1",
    "first_seen": "2026-08-15",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -164,7 +164,7 @@
    "org": "",
    "url": "https://www.shinhanfund.com/ko/pc/board/noticeView?no=214",
    "first_seen": "2026-08-15",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
   },
