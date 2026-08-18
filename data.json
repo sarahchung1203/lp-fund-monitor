@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-18 08:43 KST",
-  "today": "2026-08-18",
+  "generated_at": "2026-08-19 08:43 KST",
+  "today": "2026-08-19",
   "new_days": 3,
   "total": 88,
-  "new_count": 1,
-  "closed_count": 21,
+  "new_count": 2,
+  "closed_count": 20,
   "sources": [
    {
     "code": "kvic",
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 13,
+    "count": 14,
     "ok": true,
     "error": "",
     "carried": 0
@@ -66,18 +66,18 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 1
+    "count": 2,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 3,
-    "ok": false,
-    "error": "교직원공제회 접근 실패",
-    "carried": 3
+    "count": 4,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kif",
@@ -101,6 +101,32 @@
    "first_seen": "2026-08-05",
    "is_new": true,
    "is_closed": true,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1109",
+   "title": "【접수현황】「무공해차 인프라펀드」위탁운용사 접수 현황",
+   "date": "2026-08-18",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1109&str_type=1&tab=1",
+   "first_seen": "2026-08-19",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
+  {
+   "source": "kvca",
+   "id": "896",
+   "title": "[과학기술인공제회] 2026년 국내 PE·VC 블라인드 펀드 선정 공고",
+   "date": "2026-08-14",
+   "deadline": "2026-09-07",
+   "org": "과학기술인공제회",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=896",
+   "first_seen": "2026-08-19",
+   "is_new": false,
+   "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -409,7 +435,7 @@
    "date": "2026-07-29",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1096&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1096&str_type=1&tab=1",
    "first_seen": "2026-07-30",
    "is_new": false,
    "is_closed": false,
@@ -490,7 +516,7 @@
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1093&str_type=1&tab=1",
    "first_seen": "2026-07-25",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -637,19 +663,6 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "kgrowth",
-   "id": "1086",
-   "title": "【선정공고】「부산 미래산업 전환펀드(2차)」 위탁운용사 선정계획 공고",
-   "date": "2026-07-16",
-   "deadline": "2026-08-14",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1086&str_type=1&tab=1",
-   "first_seen": "2026-07-17",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "shinhan",
    "id": "209",
    "title": "(재공고)과학기술혁신펀드 2026년 위탁운용사 선정계획 공고",
@@ -747,7 +760,7 @@
    "date": "2026-07-07",
    "deadline": "2026-07-16",
    "org": "한국교직원공제회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=868",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=868",
    "first_seen": "2026-07-08",
    "is_new": false,
    "is_closed": true,
@@ -956,19 +969,6 @@
    "deadline": "2026-07-08",
    "org": "부천산업진흥원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=858",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "857",
-   "title": "「국민성장펀드(간접투자분야) 정책성펀드」2026년 2차 위탁운용사 선정계획 공고",
-   "date": "2026-05-27",
-   "deadline": "2026-06-10",
-   "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=857",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": true,
