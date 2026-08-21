@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-08-21 08:47 KST",
-  "today": "2026-08-21",
+  "generated_at": "2026-08-22 08:45 KST",
+  "today": "2026-08-22",
   "new_days": 3,
   "total": 88,
-  "new_count": 2,
-  "closed_count": 21,
+  "new_count": 4,
+  "closed_count": 23,
   "sources": [
    {
     "code": "kvic",
@@ -43,9 +43,9 @@
     "code": "shinhan",
     "name": "신한벤처투자",
     "count": 10,
-    "ok": false,
-    "error": "403 Client Error: Forbidden for url: https://r.jina.ai/https://www.shinhanfund.c",
-    "carried": 10
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kofia",
@@ -104,6 +104,45 @@
    "source_name": "벤처캐피탈협회"
   },
   {
+   "source": "kvic",
+   "id": "5100",
+   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 질의응답 게시의 건",
+   "date": "2026-08-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5100",
+   "first_seen": "2026-08-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5098",
+   "title": "2026년 LP 성장펀드(Track 2) 1차 출자사업 질의응답 게시의 건",
+   "date": "2026-08-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5098",
+   "first_seen": "2026-08-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5096",
+   "title": "모태펀드(중기부 소관) 2026년 LP 성장펀드(Track 1) 출자사업 질의응답 게시의 건",
+   "date": "2026-08-21",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5096",
+   "first_seen": "2026-08-22",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "kgrowth",
    "id": "1109",
    "title": "【접수현황】「무공해차 인프라펀드」위탁운용사 접수 현황",
@@ -112,7 +151,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1109&str_type=1&tab=1",
    "first_seen": "2026-08-19",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -269,7 +308,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=895",
    "first_seen": "2026-08-11",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -468,32 +507,6 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "kvic",
-   "id": "5055",
-   "title": "모태펀드(보건복지부) 2026년 5월 수시 출자사업 선정 결과",
-   "date": "2026-07-27",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5055",
-   "first_seen": "2026-07-28",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5057",
-   "title": "한국모태펀드(문화, 관광, 스포츠) 2026년 5월 수시 출자사업 선정 결과",
-   "date": "2026-07-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5057",
-   "first_seen": "2026-07-25",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1094",
    "title": "【접수현황】「기술혁신전문펀드 7호(M.AX 산업대전환 혁신)」 위탁운용사 접수 현황",
@@ -581,7 +594,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=880",
    "first_seen": "2026-07-23",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -596,19 +609,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5052",
-   "title": "모태펀드(중기부 소관) 2026년 5월 수시 출자사업 선정 결과",
-   "date": "2026-07-21",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5052",
-   "first_seen": "2026-07-22",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
