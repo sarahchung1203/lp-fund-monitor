@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-08-24 08:42 KST",
-  "today": "2026-08-24",
+  "generated_at": "2026-08-25 08:43 KST",
+  "today": "2026-08-25",
   "new_days": 3,
   "total": 88,
-  "new_count": 4,
+  "new_count": 1,
   "closed_count": 23,
   "sources": [
    {
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -112,7 +112,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5100",
    "first_seen": "2026-08-22",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5098",
    "first_seen": "2026-08-22",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5096",
    "first_seen": "2026-08-22",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
