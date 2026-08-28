@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-08-27 13:35 KST",
-  "today": "2026-08-27",
+  "generated_at": "2026-08-28 15:58 KST",
+  "today": "2026-08-28",
   "new_days": 3,
   "total": 89,
-  "new_count": 3,
+  "new_count": 6,
   "closed_count": 23,
   "sources": [
    {
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -102,6 +102,45 @@
    "is_new": true,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
+   "id": "5105",
+   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 접수 현황",
+   "date": "2026-08-27",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5105",
+   "first_seen": "2026-08-28",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5104",
+   "title": "한국모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 선정 결과",
+   "date": "2026-08-27",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5104",
+   "first_seen": "2026-08-28",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5103",
+   "title": "모태펀드(특허계정) 2026년 6월 수시 출자사업 선정 결과",
+   "date": "2026-08-27",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5103",
+   "first_seen": "2026-08-28",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
@@ -351,32 +390,6 @@
    "source_name": "한국벤처투자(모태펀드)"
   },
   {
-   "source": "kvic",
-   "id": "5079",
-   "title": "모태펀드(관광, 스포츠, 국민안전) 2026년 6월 수시 출자사업 서류심사 결과",
-   "date": "2026-08-07",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5079",
-   "first_seen": "2026-08-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5078",
-   "title": "모태펀드(특허계정) 2026년 6월 수시 출자사업 서류심사 결과",
-   "date": "2026-08-07",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5078",
-   "first_seen": "2026-08-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kvca",
    "id": "894",
    "title": "2026년 고용보험기금 대체투자상품(PEF, VC) 선정 공고",
@@ -401,19 +414,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kvic",
-   "id": "5073",
-   "title": "지역 모펀드(강원 전략산업, 경남-KDB 지역혁신 벤처펀드) 2026년 출자사업 선정 결과",
-   "date": "2026-08-03",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5073",
-   "first_seen": "2026-08-04",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
