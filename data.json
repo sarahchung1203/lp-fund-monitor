@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-01 10:55 KST",
-  "today": "2026-09-01",
+  "generated_at": "2026-09-02 10:09 KST",
+  "today": "2026-09-02",
   "new_days": 3,
-  "total": 88,
-  "new_count": 2,
+  "total": 89,
+  "new_count": 3,
   "closed_count": 22,
   "sources": [
    {
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -82,7 +82,7 @@
    {
     "code": "kif",
     "name": "KIF(한국IT펀드)",
-    "count": 5,
+    "count": 6,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kif",
+   "id": "50137",
+   "title": "2026년 KIF투자조합 자펀드 업무집행조합원 선정 결과",
+   "date": "2026-09-01",
+   "deadline": "",
+   "org": "KIF(KTOA)",
+   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50137",
+   "first_seen": "2026-09-02",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "KIF(한국IT펀드)"
+  },
   {
    "source": "kvic",
    "id": "5108",
