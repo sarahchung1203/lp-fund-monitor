@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-03 10:16 KST",
-  "today": "2026-09-03",
+  "generated_at": "2026-09-04 10:07 KST",
+  "today": "2026-09-04",
   "new_days": 3,
-  "total": 89,
-  "new_count": 3,
+  "total": 90,
+  "new_count": 2,
   "closed_count": 22,
   "sources": [
    {
@@ -74,7 +74,7 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 4,
+    "count": 5,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "ktcu",
+   "id": "61742",
+   "title": "2026년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
+   "date": "2026-09-04",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/61742",
+   "first_seen": "2026-09-04",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "교직원공제회"
+  },
   {
    "source": "kif",
    "id": "50137",
@@ -112,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5108",
    "first_seen": "2026-09-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +138,7 @@
    "org": "군인공제회",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=893",
    "first_seen": "2026-08-05",
-   "is_new": true,
+   "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
