@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-04 10:07 KST",
-  "today": "2026-09-04",
+  "generated_at": "2026-09-05 10:10 KST",
+  "today": "2026-09-05",
   "new_days": 3,
   "total": 90,
-  "new_count": 2,
+  "new_count": 4,
   "closed_count": 22,
   "sources": [
    {
@@ -91,6 +91,45 @@
  },
  "items": [
   {
+   "source": "kvic",
+   "id": "5121",
+   "title": "경북·전남 지역혁신 벤처펀드 2026년 출자사업 계획 공고",
+   "date": "2026-09-04",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5121",
+   "first_seen": "2026-09-05",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5120",
+   "title": "경북-포스코 혁신성장 벤처펀드 2026년 출자사업 계획 공고",
+   "date": "2026-09-04",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5120",
+   "first_seen": "2026-09-05",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5118",
+   "title": "충남 기업성장 벤처펀드 2026년 2차 출자사업 계획 공고",
+   "date": "2026-09-04",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5118",
+   "first_seen": "2026-09-05",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "ktcu",
    "id": "61742",
    "title": "2026년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
@@ -112,7 +151,7 @@
    "org": "KIF(KTOA)",
    "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50137",
    "first_seen": "2026-09-02",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "KIF(한국IT펀드)"
   },
@@ -286,32 +325,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvic",
-   "id": "5091",
-   "title": "2026년 LP 성장펀드(Track 2) 1차 출자사업 계획 공고",
-   "date": "2026-08-14",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5091",
-   "first_seen": "2026-08-15",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5090",
-   "title": "모태펀드(중기부 소관) 2026년 LP 성장펀드(Track 1) 출자사업 계획 공고",
-   "date": "2026-08-14",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5090",
-   "first_seen": "2026-08-15",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1108",
    "title": "【접수현황】「기술혁신전문펀드 7호(5극3특 지역산업활력펀드)」 위탁운용사 접수 현황",
@@ -349,19 +362,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kvic",
-   "id": "5089",
-   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 계획 공고",
-   "date": "2026-08-13",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5089",
-   "first_seen": "2026-08-14",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
