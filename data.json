@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-09-05 10:10 KST",
-  "today": "2026-09-05",
+  "generated_at": "2026-09-06 10:08 KST",
+  "today": "2026-09-06",
   "new_days": 3,
   "total": 90,
   "new_count": 4,
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 1
+    "count": 2,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
