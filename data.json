@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-09-09 10:20 KST",
-  "today": "2026-09-09",
+  "generated_at": "2026-09-10 10:14 KST",
+  "today": "2026-09-10",
   "new_days": 3,
-  "total": 86,
-  "new_count": 3,
-  "closed_count": 22,
+  "total": 87,
+  "new_count": 4,
+  "closed_count": 21,
   "sources": [
    {
     "code": "kvic",
@@ -43,9 +43,9 @@
     "code": "shinhan",
     "name": "신한벤처투자",
     "count": 10,
-    "ok": false,
-    "error": "403 Client Error: Forbidden for url: https://r.jina.ai/https://www.shinhanfund.c",
-    "carried": 10
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kofia",
@@ -66,18 +66,18 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 1
+    "count": 2,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 5,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 4,
+    "ok": false,
+    "error": "교직원공제회 접근 실패",
+    "carried": 4
    },
    {
     "code": "kif",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1117",
+   "title": "【선정결과】「무공해차 인프라펀드」위탁운용사 선정 결과",
+   "date": "2026-09-09",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1117&str_type=1&tab=1",
+   "first_seen": "2026-09-10",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kvic",
    "id": "5124",
@@ -422,7 +435,7 @@
    "date": "2026-08-12",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1103&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1103&str_type=1&tab=1",
    "first_seen": "2026-08-13",
    "is_new": false,
    "is_closed": false,
@@ -559,6 +572,19 @@
    "source_name": "신한벤처투자"
   },
   {
+   "source": "kvca",
+   "id": "891",
+   "title": "「기술혁신전문펀드 7호」 2차 (5극3특 지역산업활력펀드) 위탁운용사 선정계획 공고",
+   "date": "2026-07-29",
+   "deadline": "",
+   "org": "한국성장금융",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=891",
+   "first_seen": "2026-09-10",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kgrowth",
    "id": "1096",
    "title": "【선정결과】「핀테크혁신펀드 7차 [Next Finance]」위탁운용사 선정 결과",
@@ -634,19 +660,6 @@
    "first_seen": "2026-07-25",
    "is_new": false,
    "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1091",
-   "title": "【선정공고】「기술혁신전문펀드 7호」2차 (5극3특 지역산업활력펀드) 위탁운용사 선정계획 공고",
-   "date": "2026-07-23",
-   "deadline": "2026-08-14",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1091&str_type=1&tab=1",
-   "first_seen": "2026-07-24",
-   "is_new": false,
-   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
