@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-10 10:14 KST",
-  "today": "2026-09-10",
+  "generated_at": "2026-09-11 10:16 KST",
+  "today": "2026-09-11",
   "new_days": 3,
-  "total": 87,
-  "new_count": 4,
+  "total": 86,
+  "new_count": 3,
   "closed_count": 21,
   "sources": [
    {
@@ -58,7 +58,7 @@
    {
     "code": "nps",
     "name": "국민연금(기금운용)",
-    "count": 6,
+    "count": 5,
     "ok": true,
     "error": "",
     "carried": 0
@@ -74,10 +74,10 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 4,
-    "ok": false,
-    "error": "교직원공제회 접근 실패",
-    "carried": 4
+    "count": 5,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kif",
@@ -138,7 +138,7 @@
    "org": "하나벤처스",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=897",
    "first_seen": "2026-09-07",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "벤처캐피탈협회"
   },
@@ -1203,19 +1203,6 @@
    "deadline": "",
    "org": "국민연금",
    "url": "https://fund.nps.or.kr/impa/dlnginstslctnpbancdtl/getOHEF0018M0.do?pstId=KD202400000000147377&hmpgBbsCd=BS20240066&hmpgCd=02",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "국민연금(기금운용)"
-  },
-  {
-   "source": "nps",
-   "id": "KD202400000000147130",
-   "title": "2024년 국민연금기금 벤처펀드 위탁운용사 선정계획 공고",
-   "date": "2024-09-13",
-   "deadline": "",
-   "org": "국민연금",
-   "url": "https://fund.nps.or.kr/impa/dlnginstslctnpbancdtl/getOHEF0018M0.do?pstId=KD202400000000147130&hmpgBbsCd=BS20240066&hmpgCd=02",
    "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
