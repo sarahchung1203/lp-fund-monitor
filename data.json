@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-11 10:16 KST",
-  "today": "2026-09-11",
+  "generated_at": "2026-09-12 10:18 KST",
+  "today": "2026-09-12",
   "new_days": 3,
   "total": 86,
-  "new_count": 3,
+  "new_count": 5,
   "closed_count": 21,
   "sources": [
    {
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -90,6 +90,58 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5130",
+   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 계획 공고",
+   "date": "2026-09-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5130",
+   "first_seen": "2026-09-12",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5127",
+   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 서류심사 결과",
+   "date": "2026-09-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5127",
+   "first_seen": "2026-09-12",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5126",
+   "title": "모태펀드(특허계정_특허기술사업화) 2026년 6월 수시 출자사업 서류심사 결과",
+   "date": "2026-09-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5126",
+   "first_seen": "2026-09-12",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1118",
+   "title": "【선정결과】「부산 미래산업 전환펀드 2호」위탁운용사 선정 결과",
+   "date": "2026-09-11",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1118&str_type=1&tab=1",
+   "first_seen": "2026-09-12",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kgrowth",
    "id": "1117",
@@ -112,7 +164,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5124",
    "first_seen": "2026-09-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +177,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1116&str_type=1&tab=1",
    "first_seen": "2026-09-09",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -273,19 +325,6 @@
    "source_name": "한국벤처투자(모태펀드)"
   },
   {
-   "source": "kvic",
-   "id": "5103",
-   "title": "모태펀드(특허계정) 2026년 6월 수시 출자사업 선정 결과",
-   "date": "2026-08-27",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5103",
-   "first_seen": "2026-08-28",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1112",
    "title": "【선정결과】「기술혁신전문펀드 7호(M.AX 산업대전환 혁신)」 위탁운용사 선정 결과",
@@ -310,32 +349,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5100",
-   "title": "모태펀드(문화, 관광) 2026년 8월 수시 출자사업 질의응답 게시의 건",
-   "date": "2026-08-21",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5100",
-   "first_seen": "2026-08-22",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5098",
-   "title": "2026년 LP 성장펀드(Track 2) 1차 출자사업 질의응답 게시의 건",
-   "date": "2026-08-21",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5098",
-   "first_seen": "2026-08-22",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
@@ -422,7 +435,7 @@
    "date": "2026-08-12",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1104&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1104&str_type=1&tab=1",
    "first_seen": "2026-08-13",
    "is_new": false,
    "is_closed": false,
@@ -647,19 +660,6 @@
    "first_seen": "2026-07-25",
    "is_new": false,
    "is_closed": true,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1092",
-   "title": "【제출서식】「부산 미래산업 전환펀드 2호」 제출서류 및 서식",
-   "date": "2026-07-24",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1092&str_type=1&tab=1",
-   "first_seen": "2026-07-25",
-   "is_new": false,
-   "is_closed": false,
    "source_name": "한국성장금융"
   },
   {
