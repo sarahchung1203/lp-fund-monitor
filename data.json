@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-09-14 10:17 KST",
-  "today": "2026-09-14",
+  "generated_at": "2026-09-15 10:37 KST",
+  "today": "2026-09-15",
   "new_days": 3,
-  "total": 86,
-  "new_count": 4,
-  "closed_count": 21,
+  "total": 83,
+  "new_count": 2,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 12,
+    "count": 11,
     "ok": true,
     "error": "",
     "carried": 0
@@ -74,10 +74,10 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 4,
-    "ok": false,
-    "error": "교직원공제회 접근 실패",
-    "carried": 4
+    "count": 5,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "kif",
@@ -91,17 +91,43 @@
  },
  "items": [
   {
-   "source": "kvic",
-   "id": "5130",
-   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 계획 공고",
-   "date": "2026-09-11",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5130",
-   "first_seen": "2026-09-12",
+   "source": "kvca",
+   "id": "899",
+   "title": "[재공고] 「부산 미래산업 전환펀드(2차)」 위탁운용사 선정계획 공고",
+   "date": "2026-09-14",
+   "deadline": "2026-10-01",
+   "org": "한국성장금융",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=899",
+   "first_seen": "2026-09-15",
    "is_new": true,
    "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kofia",
+   "id": "365",
+   "title": "[공무원연금공단] 2026년도 글로벌 부동산 펀드 해외 위탁운용사 선정 공고",
+   "date": "2026-09-14",
+   "deadline": "",
+   "org": "공무원연금공단",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=365",
+   "first_seen": "2026-09-15",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kvca",
+   "id": "898",
+   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 계획 공고",
+   "date": "2026-09-11",
+   "deadline": "2026-09-30",
+   "org": "한국벤처투자",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=898",
+   "first_seen": "2026-09-15",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kvic",
@@ -112,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5127",
    "first_seen": "2026-09-12",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5126",
    "first_seen": "2026-09-12",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +164,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1118&str_type=1&tab=1",
    "first_seen": "2026-09-12",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -422,7 +448,7 @@
    "date": "2026-08-13",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1106&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1106&str_type=1&tab=1",
    "first_seen": "2026-08-14",
    "is_new": false,
    "is_closed": false,
@@ -650,19 +676,6 @@
    "source_name": "한국성장금융"
   },
   {
-   "source": "kgrowth",
-   "id": "1093",
-   "title": "【선정공고】「무공해차 인프라펀드」위탁운용사 선정계획 공고",
-   "date": "2026-07-24",
-   "deadline": "2026-08-18",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1093&str_type=1&tab=1",
-   "first_seen": "2026-07-25",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "한국성장금융"
-  },
-  {
    "source": "shinhan",
    "id": "210",
    "title": "(재공고)과학기술혁신펀드 2026년 위탁운용사 선정계획 FAQ",
@@ -760,7 +773,7 @@
    "date": "2026-07-10",
    "deadline": "2026-08-03",
    "org": "농업정책보험금융원",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=871",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=871",
    "first_seen": "2026-07-15",
    "is_new": false,
    "is_closed": true,
@@ -890,7 +903,7 @@
    "date": "2026-06-30",
    "deadline": "2026-07-24",
    "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=870",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=870",
    "first_seen": "2026-07-14",
    "is_new": false,
    "is_closed": true,
@@ -962,32 +975,6 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvca",
-   "id": "860",
-   "title": "2026년 충청남도 혁신산업펀드 2호 출자사업 공고",
-   "date": "2026-06-12",
-   "deadline": "2026-07-03",
-   "org": "충청남도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=860",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "859",
-   "title": "2026년 충청남도 AI 펀드 1호 출자사업 공고",
-   "date": "2026-06-12",
-   "deadline": "2026-07-03",
-   "org": "충청남도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=859",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
    "source": "kofia",
    "id": "283",
    "title": "[농업정책보험금융원] 농림수산식품모태펀드 '26년 2차 추가 출자사업(농식품투자계정) 공고",
@@ -996,32 +983,6 @@
    "org": "농업정책보험금융원",
    "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=283",
    "first_seen": "2026-07-11",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "금융투자협회(KOFIA)"
-  },
-  {
-   "source": "kofia",
-   "id": "282",
-   "title": "[중소기업중앙회] 2026년도 중소기업중앙회 국내 블라인드 VC펀드 선정 공고",
-   "date": "2026-05-15",
-   "deadline": "",
-   "org": "중소기업중앙회",
-   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=282",
-   "first_seen": "2026-07-15",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "금융투자협회(KOFIA)"
-  },
-  {
-   "source": "kofia",
-   "id": "280",
-   "title": "[우정사업본부] 2026년 우체국보험 국내부동산 멀티전략(상장리츠 및 담보대출) 펀드 위탁운용사 선정 공고",
-   "date": "2026-05-13",
-   "deadline": "",
-   "org": "우정사업본부",
-   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=280",
-   "first_seen": "2026-06-29",
    "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
