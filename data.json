@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-09-22 10:41 KST",
-  "today": "2026-09-22",
+  "generated_at": "2026-09-23 10:35 KST",
+  "today": "2026-09-23",
   "new_days": 3,
   "total": 83,
-  "new_count": 3,
-  "closed_count": 17,
+  "new_count": 4,
+  "closed_count": 18,
   "sources": [
    {
     "code": "kvic",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5142",
+   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 질의응답 게시의 건",
+   "date": "2026-09-22",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5142",
+   "first_seen": "2026-09-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kvic",
    "id": "5140",
@@ -334,7 +347,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=897",
    "first_seen": "2026-09-07",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -358,19 +371,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5120",
-   "first_seen": "2026-09-05",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5118",
-   "title": "충남 기업성장 벤처펀드 2026년 2차 출자사업 계획 공고",
-   "date": "2026-09-04",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5118",
    "first_seen": "2026-09-05",
    "is_new": false,
    "is_closed": false,
