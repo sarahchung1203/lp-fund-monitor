@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-09-30 11:13 KST",
-  "today": "2026-09-30",
+  "generated_at": "2026-10-01 11:15 KST",
+  "today": "2026-10-01",
   "new_days": 3,
   "total": 84,
-  "new_count": 2,
-  "closed_count": 18,
+  "new_count": 3,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 1,
-    "ok": false,
-    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
-    "carried": 1
+    "count": 2,
+    "ok": true,
+    "error": "",
+    "carried": 0
    },
    {
     "code": "ktcu",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5149",
+   "title": "모태펀드(중기부 소관) 2026년 LP 성장펀드(Track 1) 출자사업 서류심사 결과",
+   "date": "2026-09-30",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5149",
+   "first_seen": "2026-10-01",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kofia",
    "id": "376",
@@ -308,7 +321,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=898",
    "first_seen": "2026-09-15",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -362,19 +375,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5124",
-   "title": "모태펀드(중기부 소관) 2026년 LP 성장펀드(Track 1) 출자사업 접수 현황",
-   "date": "2026-09-08",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5124",
-   "first_seen": "2026-09-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
