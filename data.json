@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-10-01 11:15 KST",
-  "today": "2026-10-01",
+  "generated_at": "2026-10-02 11:22 KST",
+  "today": "2026-10-02",
   "new_days": 3,
   "total": 84,
-  "new_count": 3,
-  "closed_count": 19,
+  "new_count": 4,
+  "closed_count": 20,
   "sources": [
    {
     "code": "kvic",
@@ -66,10 +66,10 @@
    {
     "code": "mmaa",
     "name": "군인공제회",
-    "count": 2,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 1,
+    "ok": false,
+    "error": "군인공제회 접근 실패 [HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/h",
+    "carried": 1
    },
    {
     "code": "ktcu",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5157",
+   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 접수 현황",
+   "date": "2026-10-01",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5157",
+   "first_seen": "2026-10-02",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kvic",
    "id": "5149",
@@ -295,7 +308,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=899",
    "first_seen": "2026-09-15",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -332,19 +345,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5127",
-   "first_seen": "2026-09-12",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5126",
-   "title": "모태펀드(특허계정_특허기술사업화) 2026년 6월 수시 출자사업 서류심사 결과",
-   "date": "2026-09-11",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5126",
    "first_seen": "2026-09-12",
    "is_new": false,
    "is_closed": false,
