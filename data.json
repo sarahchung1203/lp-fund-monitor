@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-03 11:09 KST",
-  "today": "2026-10-03",
+  "generated_at": "2026-10-04 11:47 KST",
+  "today": "2026-10-04",
   "new_days": 3,
   "total": 84,
-  "new_count": 4,
+  "new_count": 2,
   "closed_count": 20,
   "sources": [
    {
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5149",
    "first_seen": "2026-10-01",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +138,7 @@
    "org": "전문건설공제조합",
    "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=376",
    "first_seen": "2026-09-30",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
   },
