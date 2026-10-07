@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-06 12:10 KST",
-  "today": "2026-10-06",
+  "generated_at": "2026-10-07 11:33 KST",
+  "today": "2026-10-07",
   "new_days": 3,
-  "total": 84,
-  "new_count": 1,
+  "total": 85,
+  "new_count": 3,
   "closed_count": 19,
   "sources": [
    {
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5161",
+   "title": "지역모펀드(경북·전남 지역혁신, 경북-포스코 혁신성장, 충남 기업성장) 2026년 출자사업 접수 현황",
+   "date": "2026-10-06",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5161",
+   "first_seen": "2026-10-07",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5159",
+   "title": "2026년 LP 성장펀드(Track 2) 2차 출자사업 질의응답",
+   "date": "2026-10-06",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5159",
+   "first_seen": "2026-10-07",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kvca",
    "id": "901",
@@ -306,19 +332,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5133",
-   "first_seen": "2026-09-16",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5132",
-   "title": "2026년 LP 성장펀드(Track 2) 1차 출자사업 접수현황",
-   "date": "2026-09-15",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5132",
    "first_seen": "2026-09-16",
    "is_new": false,
    "is_closed": false,
