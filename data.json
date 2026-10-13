@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-12 11:32 KST",
-  "today": "2026-10-12",
+  "generated_at": "2026-10-13 12:41 KST",
+  "today": "2026-10-13",
   "new_days": 3,
   "total": 83,
-  "new_count": 0,
+  "new_count": 1,
   "closed_count": 20,
   "sources": [
    {
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kgrowth",
+   "id": "1126",
+   "title": "【접수현황】「IBK 생산적금융펀드 1호​」일반매칭 위탁운용사 접수 현황",
+   "date": "2026-10-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1126&str_type=1&tab=1",
+   "first_seen": "2026-10-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kvic",
    "id": "5164",
@@ -435,7 +448,7 @@
    "date": "2026-09-08",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1116&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1116&str_type=1&tab=1",
    "first_seen": "2026-09-09",
    "is_new": false,
    "is_closed": false,
@@ -674,19 +687,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1100",
-   "title": "【선정결과】「은행권 중견기업 밸류업펀드(3차)」 위탁운용사 선정 결과",
-   "date": "2026-07-31",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1100&str_type=1&tab=1",
-   "first_seen": "2026-08-01",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kvca",
