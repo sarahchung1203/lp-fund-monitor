@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-15 10:36 KST",
-  "today": "2026-10-15",
+  "generated_at": "2026-10-16 10:32 KST",
+  "today": "2026-10-16",
   "new_days": 3,
   "total": 83,
-  "new_count": 2,
+  "new_count": 1,
   "closed_count": 21,
   "sources": [
    {
@@ -112,7 +112,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1126&str_type=1&tab=1",
    "first_seen": "2026-10-13",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
