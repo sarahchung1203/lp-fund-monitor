@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generated_at": "2026-10-16 10:32 KST",
-  "today": "2026-10-16",
+  "generated_at": "2026-10-17 10:23 KST",
+  "today": "2026-10-17",
   "new_days": 3,
   "total": 83,
   "new_count": 1,
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 12,
+    "count": 11,
     "ok": true,
     "error": "",
     "carried": 0
