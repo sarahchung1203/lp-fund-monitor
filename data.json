@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-10-19 10:27 KST",
-  "today": "2026-10-19",
+  "generated_at": "2026-10-20 10:57 KST",
+  "today": "2026-10-20",
   "new_days": 3,
-  "total": 83,
-  "new_count": 0,
-  "closed_count": 21,
+  "total": 81,
+  "new_count": 3,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -34,7 +34,7 @@
    {
     "code": "kfcc",
     "name": "새마을금고중앙회",
-    "count": 2,
+    "count": 0,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,45 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5173",
+   "title": "2026년 해외VC 글로벌 펀드 출자사업 (3차) 접수 현황",
+   "date": "2026-10-19",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5173",
+   "first_seen": "2026-10-20",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5171",
+   "title": "2026년 글로벌 리그 펀드 출자사업 최종 선정결과",
+   "date": "2026-10-19",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5171",
+   "first_seen": "2026-10-20",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvic",
+   "id": "5169",
+   "title": "2026년 해외VC 글로벌 펀드 출자사업 (2차) 최종 선정결과",
+   "date": "2026-10-19",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5169",
+   "first_seen": "2026-10-20",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kvic",
    "id": "5168",
@@ -247,32 +286,6 @@
    "source_name": "금융투자협회(KOFIA)"
   },
   {
-   "source": "kvic",
-   "id": "5147",
-   "title": "2026년 LP 성장펀드(Track 2) 2차 출자사업 계획 공고",
-   "date": "2026-09-29",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5147",
-   "first_seen": "2026-09-30",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5144",
-   "title": "모태펀드(특허계정_특허기술사업화) 2026년 6월 수시 출자사업 선정 결과",
-   "date": "2026-09-23",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5144",
-   "first_seen": "2026-09-24",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1123",
    "title": "【선정결과】「기술혁신전문펀드 7호(5극3특 지역산업활력펀드)」 위탁운용사 선정 결과",
@@ -284,19 +297,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5142",
-   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 질의응답 게시의 건",
-   "date": "2026-09-22",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5142",
-   "first_seen": "2026-09-23",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "shinhan",
@@ -1118,19 +1118,6 @@
    "source_name": "교직원공제회"
   },
   {
-   "source": "kfcc",
-   "id": "436",
-   "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
-   "date": "2025-04-30",
-   "deadline": "2025-05-14",
-   "org": "",
-   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=436",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "새마을금고중앙회"
-  },
-  {
    "source": "ktcu",
    "id": "57104",
    "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
@@ -1142,19 +1129,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "교직원공제회"
-  },
-  {
-   "source": "kfcc",
-   "id": "432",
-   "title": "2025년 새마을금고중앙회 국내지분증권 간접투자운용사 군 선정 공고문",
-   "date": "2025-03-12",
-   "deadline": "2025-03-20",
-   "org": "",
-   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=432",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "새마을금고중앙회"
   },
   {
    "source": "nps",
