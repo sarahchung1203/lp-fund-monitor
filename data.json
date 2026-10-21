@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-10-20 10:57 KST",
-  "today": "2026-10-20",
+  "generated_at": "2026-10-21 10:47 KST",
+  "today": "2026-10-21",
   "new_days": 3,
-  "total": 81,
+  "total": 79,
   "new_count": 3,
   "closed_count": 19,
   "sources": [
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 11,
+    "count": 10,
     "ok": true,
     "error": "",
     "carried": 0
@@ -82,7 +82,7 @@
    {
     "code": "kif",
     "name": "KIF(한국IT펀드)",
-    "count": 6,
+    "count": 5,
     "ok": true,
     "error": "",
     "carried": 0
@@ -910,19 +910,6 @@
    "source_name": "금융투자협회(KOFIA)"
   },
   {
-   "source": "kofia",
-   "id": "304",
-   "title": "[우정사업본부] 2026년도 국내PEF 운용사별 펀딩 현황 자료 요청",
-   "date": "2026-07-03",
-   "deadline": "",
-   "org": "우정사업본부",
-   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=304",
-   "first_seen": "2026-07-03",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "금융투자협회(KOFIA)"
-  },
-  {
    "source": "shinhan",
    "id": "206",
    "title": "국민성장펀드(간접투자분야) 정책성펀드 2026년 2차 위탁운용사 선정 서류심사 결과",
@@ -1051,19 +1038,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "국민연금(기금운용)"
-  },
-  {
-   "source": "kif",
-   "id": "50098",
-   "title": "2025년 KIF투자조합 업무집행조합원 1차 심의 결과",
-   "date": "2025-09-16",
-   "deadline": "",
-   "org": "KIF(KTOA)",
-   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50098",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "KIF(한국IT펀드)"
   },
   {
    "source": "ktcu",
