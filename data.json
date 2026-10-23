@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-22 10:39 KST",
-  "today": "2026-10-22",
+  "generated_at": "2026-10-23 10:42 KST",
+  "today": "2026-10-23",
   "new_days": 3,
   "total": 79,
-  "new_count": 4,
+  "new_count": 2,
   "closed_count": 19,
   "sources": [
    {
@@ -91,6 +91,19 @@
  },
  "items": [
   {
+   "source": "kofia",
+   "id": "393",
+   "title": "[한국자산관리공사] 「PF사업장 정상화 지원펀드」 운용사 선정계획 공고",
+   "date": "2026-10-23",
+   "deadline": "",
+   "org": "한국자산관리공사",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=393",
+   "first_seen": "2026-10-23",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
    "source": "kvic",
    "id": "5179",
    "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 계획 공고",
@@ -112,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5173",
    "first_seen": "2026-10-20",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -125,7 +138,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5171",
    "first_seen": "2026-10-20",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -138,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5169",
    "first_seen": "2026-10-20",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -895,19 +908,6 @@
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kofia",
-   "id": "307",
-   "title": "[한국성장금융] 국민성장펀드(국민참여형) 2차 위탁운용사 선정 공고",
-   "date": "2026-07-06",
-   "deadline": "",
-   "org": "한국성장금융",
-   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=307",
-   "first_seen": "2026-07-06",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "금융투자협회(KOFIA)"
   },
   {
    "source": "shinhan",
