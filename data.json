@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-23 10:42 KST",
-  "today": "2026-10-23",
+  "generated_at": "2026-10-24 10:45 KST",
+  "today": "2026-10-24",
   "new_days": 3,
   "total": 79,
-  "new_count": 2,
+  "new_count": 3,
   "closed_count": 19,
   "sources": [
    {
@@ -74,10 +74,10 @@
    {
     "code": "ktcu",
     "name": "교직원공제회",
-    "count": 5,
-    "ok": true,
-    "error": "",
-    "carried": 0
+    "count": 4,
+    "ok": false,
+    "error": "교직원공제회 접근 실패",
+    "carried": 4
    },
    {
     "code": "kif",
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5180",
+   "title": "2026년 LP 성장펀드(Track 2) 1차 출자사업 선정 결과",
+   "date": "2026-10-23",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5180",
+   "first_seen": "2026-10-24",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kofia",
    "id": "393",
@@ -268,19 +281,6 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5158",
    "first_seen": "2026-10-03",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5157",
-   "title": "모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 접수 현황",
-   "date": "2026-10-01",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5157",
-   "first_seen": "2026-10-02",
    "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
