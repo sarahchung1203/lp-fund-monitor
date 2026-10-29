@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-28 11:28 KST",
-  "today": "2026-10-28",
+  "generated_at": "2026-10-29 11:35 KST",
+  "today": "2026-10-29",
   "new_days": 3,
   "total": 78,
-  "new_count": 3,
+  "new_count": 5,
   "closed_count": 19,
   "sources": [
    {
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 10,
+    "count": 9,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5213",
+   "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 질의응답 게시의 건",
+   "date": "2026-10-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5213",
+   "first_seen": "2026-10-29",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1132",
+   "title": "【선정결과】「IBK 생산적금융펀드 1호」일반매칭 위탁운용사 서류심사 결과",
+   "date": "2026-10-28",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1132&str_type=1&tab=1",
+   "first_seen": "2026-10-29",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kvic",
    "id": "5201",
@@ -280,19 +306,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5161",
-   "first_seen": "2026-10-07",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5159",
-   "title": "2026년 LP 성장펀드(Track 2) 2차 출자사업 질의응답",
-   "date": "2026-10-06",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5159",
    "first_seen": "2026-10-07",
    "is_new": false,
    "is_closed": false,
@@ -632,19 +645,6 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1106&str_type=1&tab=1",
    "first_seen": "2026-08-14",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1104",
-   "title": "【선정결과】「성장사다리펀드2」 2024년(1차년도(재공고)) 위탁운용사 선정 결과",
-   "date": "2026-08-12",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1104&str_type=1&tab=1",
-   "first_seen": "2026-08-13",
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
