@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-10-30 11:44 KST",
-  "today": "2026-10-30",
+  "generated_at": "2026-10-31 11:35 KST",
+  "today": "2026-10-31",
   "new_days": 3,
-  "total": 78,
-  "new_count": 3,
-  "closed_count": 19,
+  "total": 79,
+  "new_count": 4,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -92,6 +92,32 @@
  "items": [
   {
    "source": "kvic",
+   "id": "5217",
+   "title": "한국모태펀드(관광, 스포츠) 2026년 9월 수시 출자사업 선정 결과",
+   "date": "2026-10-30",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5217",
+   "first_seen": "2026-10-31",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvca",
+   "id": "902",
+   "title": "농림수산식품모태펀드 '26년 5차 추가 출자사업(농식품 계정) 공고",
+   "date": "2026-10-28",
+   "deadline": "2026-11-13",
+   "org": "농업정책보험금융원",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=902",
+   "first_seen": "2026-10-31",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
    "id": "5213",
    "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 질의응답 게시의 건",
    "date": "2026-10-28",
@@ -125,7 +151,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5201",
    "first_seen": "2026-10-28",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -154,6 +180,19 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kvca",
+   "id": "943",
+   "title": "「인천혁신모펀드 제6호」2차 출자사업(일반출자) 공고",
+   "date": "2026-10-23",
+   "deadline": "2026-11-06",
+   "org": "인천테크노파크",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=943",
+   "first_seen": "2026-10-31",
+   "is_new": false,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kvic",
@@ -297,19 +336,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5161",
-   "title": "지역모펀드(경북·전남 지역혁신, 경북-포스코 혁신성장, 충남 기업성장) 2026년 출자사업 접수 현황",
-   "date": "2026-10-06",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5161",
-   "first_seen": "2026-10-07",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kvca",
@@ -539,7 +565,7 @@
    "date": "2026-08-31",
    "deadline": "2026-08-14",
    "org": "군인공제회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=893",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=893",
    "first_seen": "2026-08-05",
    "is_new": false,
    "is_closed": true,
@@ -708,7 +734,7 @@
    "date": "2026-07-30",
    "deadline": "2026-08-13",
    "org": "우정사업본부",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=892",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=892",
    "first_seen": "2026-08-05",
    "is_new": false,
    "is_closed": true,
@@ -923,17 +949,17 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvca",
-   "id": "864",
-   "title": "[제주특별자치도]｢제주 로컬기업 성장펀드｣ 업무집행조합원 모집 공고",
-   "date": "2026-07-01",
-   "deadline": "2026-07-15",
-   "org": "제주특별자치도",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=864",
-   "first_seen": "2026-07-01",
+   "source": "kif",
+   "id": "50134",
+   "title": "2026년 KIF투자조합 업무집행조합원 선정계획 공고",
+   "date": "2026-06-30",
+   "deadline": "",
+   "org": "KIF(KTOA)",
+   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50134",
+   "first_seen": "2026-10-31",
    "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
+   "is_closed": false,
+   "source_name": "KIF(한국IT펀드)"
   },
   {
    "source": "kvca",
@@ -944,19 +970,6 @@
    "org": "한국성장금융",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=870",
    "first_seen": "2026-07-14",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "863",
-   "title": "[KIF투자조합]2026년 KIF투자조합 업무집행조합원 선정계획 공고",
-   "date": "2026-06-30",
-   "deadline": "2026-07-20",
-   "org": "KIF투자조합",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=863",
-   "first_seen": "2026-06-30",
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
