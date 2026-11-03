@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-02 11:38 KST",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03 12:58 KST",
+  "today": "2026-11-03",
   "new_days": 3,
-  "total": 79,
-  "new_count": 1,
+  "total": 78,
+  "new_count": 0,
   "closed_count": 17,
   "sources": [
    {
@@ -82,7 +82,7 @@
    {
     "code": "kif",
     "name": "KIF(한국IT펀드)",
-    "count": 5,
+    "count": 4,
     "ok": true,
     "error": "",
     "carried": 0
@@ -99,7 +99,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5217",
    "first_seen": "2026-10-31",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -1012,19 +1012,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "군인공제회"
-  },
-  {
-   "source": "kif",
-   "id": "50100",
-   "title": "2025년 KIF투자조합 자펀드 업무집행조합원 선정결과",
-   "date": "2025-10-02",
-   "deadline": "",
-   "org": "KIF(KTOA)",
-   "url": "https://www.ktoa.or.kr/ko/notice/bidding/view?detailsKey=50100",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "KIF(한국IT펀드)"
   },
   {
    "source": "nps",
