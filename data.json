@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-03 12:58 KST",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04 12:04 KST",
+  "today": "2026-11-04",
   "new_days": 3,
-  "total": 78,
-  "new_count": 0,
+  "total": 79,
+  "new_count": 1,
   "closed_count": 17,
   "sources": [
    {
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 9,
+    "count": 10,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kofia",
+   "id": "401",
+   "title": "[건설근로자공제회] 2026년도 하반기 대체투자(국내 부동산 선순위 대출펀드) 위탁운용사 선정 공고",
+   "date": "2026-11-03",
+   "deadline": "",
+   "org": "건설근로자공제회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=401",
+   "first_seen": "2026-11-04",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
   {
    "source": "kvic",
    "id": "5217",
