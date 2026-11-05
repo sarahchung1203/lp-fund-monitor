@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-04 12:04 KST",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05 12:35 KST",
+  "today": "2026-11-05",
   "new_days": 3,
   "total": 79,
-  "new_count": 1,
+  "new_count": 2,
   "closed_count": 17,
   "sources": [
    {
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5222",
+   "title": "지역 모펀드(경북·전남 지역혁신, 경북-포스코 혁신성장, 충남 기업성장 벤처펀드) 2026년 출자사업 서류심사 결과",
+   "date": "2026-11-04",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5222",
+   "first_seen": "2026-11-05",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kofia",
    "id": "401",
@@ -310,19 +323,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
-  },
-  {
-   "source": "kvic",
-   "id": "5164",
-   "title": "한국모태펀드(문화, 관광) 2026년 8월 수시 출자사업 선정 결과",
-   "date": "2026-10-08",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5164",
-   "first_seen": "2026-10-09",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
   },
   {
    "source": "kgrowth",
