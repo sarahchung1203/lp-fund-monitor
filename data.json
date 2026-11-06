@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-05 12:35 KST",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06 12:29 KST",
+  "today": "2026-11-06",
   "new_days": 3,
-  "total": 79,
-  "new_count": 2,
+  "total": 81,
+  "new_count": 4,
   "closed_count": 17,
   "sources": [
    {
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 10,
+    "count": 12,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kofia",
+   "id": "403",
+   "title": "[한국해양진흥공사]「해양수도권 육성지원 펀드」 운용사 선정 공고",
+   "date": "2026-11-06",
+   "deadline": "",
+   "org": "한국해양진흥공사",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=403",
+   "first_seen": "2026-11-06",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
+  {
+   "source": "kofia",
+   "id": "402",
+   "title": "[산은인프라자산운용] 「한국에너지공단 RE100 생산적금융 모펀드」 하위펀드 위탁운용사 수시모집 공고",
+   "date": "2026-11-06",
+   "deadline": "",
+   "org": "산은인프라자산운용",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=402",
+   "first_seen": "2026-11-06",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
   {
    "source": "kvic",
    "id": "5222",
