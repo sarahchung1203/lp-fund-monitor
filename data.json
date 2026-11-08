@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-07 11:57 KST",
-  "today": "2026-11-07",
+  "generated_at": "2026-11-08 11:36 KST",
+  "today": "2026-11-08",
   "new_days": 3,
   "total": 81,
-  "new_count": 3,
+  "new_count": 2,
   "closed_count": 18,
   "sources": [
    {
@@ -125,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5222",
    "first_seen": "2026-11-05",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
