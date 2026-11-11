@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-11-10 13:42 KST",
-  "today": "2026-11-10",
+  "generated_at": "2026-11-11 11:53 KST",
+  "today": "2026-11-11",
   "new_days": 3,
-  "total": 81,
-  "new_count": 2,
+  "total": 82,
+  "new_count": 3,
   "closed_count": 18,
   "sources": [
    {
@@ -50,7 +50,7 @@
    {
     "code": "kofia",
     "name": "금융투자협회(KOFIA)",
-    "count": 11,
+    "count": 12,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kofia",
+   "id": "408",
+   "title": "[행정공제회] 헤지펀드 위탁운용사 선정 공고",
+   "date": "2026-11-11",
+   "deadline": "",
+   "org": "행정공제회",
+   "url": "https://www.kofia.or.kr:12443/brd/m_212/view.do?seq=408",
+   "first_seen": "2026-11-11",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "금융투자협회(KOFIA)"
+  },
   {
    "source": "kgrowth",
    "id": "1135",
