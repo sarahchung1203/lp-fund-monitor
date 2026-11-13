@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-12 12:57 KST",
-  "today": "2026-11-12",
+  "generated_at": "2026-11-13 12:28 KST",
+  "today": "2026-11-13",
   "new_days": 3,
-  "total": 82,
-  "new_count": 5,
-  "closed_count": 18,
+  "total": 81,
+  "new_count": 6,
+  "closed_count": 15,
   "sources": [
    {
     "code": "kvic",
@@ -92,6 +92,32 @@
  "items": [
   {
    "source": "kvic",
+   "id": "5238",
+   "title": "2026년 LP 성장펀드(Track 2) 2차 출자사업 서류심사 결과",
+   "date": "2026-11-12",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5238",
+   "first_seen": "2026-11-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kvca",
+   "id": "945",
+   "title": "「연기금투자풀 펀드」 상장기업 혁신성장펀드 위탁운용사 선정계획 공고",
+   "date": "2026-11-11",
+   "deadline": "2026-12-02",
+   "org": "한국성장금융",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=945",
+   "first_seen": "2026-11-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
    "id": "5235",
    "title": "모태펀드(특허계정) 2026년 11월 수시 출자사업 계획 공고",
    "date": "2026-11-11",
@@ -102,19 +128,6 @@
    "is_new": true,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1136",
-   "title": "【선정공고】「연기금투자풀 펀드」 상장기업 혁신성장펀드 위탁운용사 선정계획 공고",
-   "date": "2026-11-11",
-   "deadline": "2026-12-02",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1136&str_type=1&tab=1",
-   "first_seen": "2026-11-12",
-   "is_new": true,
-   "is_closed": false,
-   "source_name": "한국성장금융"
   },
   {
    "source": "kofia",
@@ -130,9 +143,22 @@
    "source_name": "금융투자협회(KOFIA)"
   },
   {
+   "source": "kvca",
+   "id": "947",
+   "title": "KB 국민성장 기업지원 제1호(민간모펀드)의 2026-3차 출자사업",
+   "date": "2026-11-10",
+   "deadline": "2026-11-16",
+   "org": "KB자산운용",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=947",
+   "first_seen": "2026-11-13",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
    "source": "kgrowth",
    "id": "1135",
-   "title": "【제출서식】(재공고)「성장사다리펀드2」 2026년(3차년도) 위탁운용사 선정 제출서류 및 서식",
+   "title": "【제출서식】(재공고)「성장사다리펀드2」 2026년(3차년도) 위탁운용사 선정 제출서류 및 서식(한글 양식 변경)",
    "date": "2026-11-10",
    "deadline": "",
    "org": "",
@@ -151,7 +177,7 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1134&str_type=1&tab=1",
    "first_seen": "2026-11-10",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
   },
@@ -371,19 +397,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5171",
-   "first_seen": "2026-10-20",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5169",
-   "title": "2026년 해외VC 글로벌 펀드 출자사업 (2차) 최종 선정결과",
-   "date": "2026-10-19",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5169",
    "first_seen": "2026-10-20",
    "is_new": false,
    "is_closed": false,
@@ -721,7 +734,7 @@
    "date": "2026-08-14",
    "deadline": "2026-09-07",
    "org": "과학기술인공제회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=896",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=896",
    "first_seen": "2026-08-19",
    "is_new": false,
    "is_closed": true,
@@ -760,7 +773,7 @@
    "date": "2026-08-10",
    "deadline": "2026-08-21",
    "org": "신한벤처투자",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=895",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=895",
    "first_seen": "2026-08-11",
    "is_new": false,
    "is_closed": true,
@@ -773,7 +786,7 @@
    "date": "2026-08-07",
    "deadline": "2026-08-20",
    "org": "미래에셋증권",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=894",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=894",
    "first_seen": "2026-08-08",
    "is_new": false,
    "is_closed": true,
@@ -949,30 +962,17 @@
    "source_name": "벤처캐피탈협회"
   },
   {
-   "source": "kvca",
-   "id": "868",
-   "title": "2026년 한국교직원공제회 VC 블라인드펀드 위탁운용사 선정 공고",
+   "source": "ktcu",
+   "id": "61383",
+   "title": "2026년 한국교직원공제회 VC 블라인드 펀드 위탁운용사 선정 공고",
    "date": "2026-07-07",
-   "deadline": "2026-07-16",
-   "org": "한국교직원공제회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=868",
-   "first_seen": "2026-07-08",
+   "deadline": "",
+   "org": "교직원공제회",
+   "url": "https://www.ktcu.or.kr/PPW-CSB-000101/61383",
+   "first_seen": "2026-07-07",
    "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "866",
-   "title": "「2026년 국민성장펀드(국민참여형) 2차」위탁운용사 선정계획 공고",
-   "date": "2026-07-06",
-   "deadline": "2026-07-20",
-   "org": "한국성장금융",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=866",
-   "first_seen": "2026-07-06",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
+   "is_closed": false,
+   "source_name": "교직원공제회"
   },
   {
    "source": "shinhan",
@@ -986,19 +986,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "신한벤처투자"
-  },
-  {
-   "source": "kvca",
-   "id": "865",
-   "title": "2026년 산재보험기금 대체투자상품(PEF, VC) 선정 공고",
-   "date": "2026-07-01",
-   "deadline": "2026-07-16",
-   "org": "삼성자산운용 산재기금",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=865",
-   "first_seen": "2026-07-06",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
   },
   {
    "source": "kif",
