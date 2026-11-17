@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-16 11:54 KST",
-  "today": "2026-11-16",
+  "generated_at": "2026-11-17 14:09 KST",
+  "today": "2026-11-17",
   "new_days": 3,
-  "total": 81,
-  "new_count": 0,
-  "closed_count": 16,
+  "total": 83,
+  "new_count": 1,
+  "closed_count": 19,
   "sources": [
    {
     "code": "kvic",
@@ -34,7 +34,7 @@
    {
     "code": "kfcc",
     "name": "새마을금고중앙회",
-    "count": 0,
+    "count": 2,
     "ok": true,
     "error": "",
     "carried": 0
@@ -90,6 +90,19 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5240",
+   "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 접수현황",
+   "date": "2026-11-16",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5240",
+   "first_seen": "2026-11-17",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
   {
    "source": "kvic",
    "id": "5238",
@@ -152,7 +165,7 @@
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=947",
    "first_seen": "2026-11-13",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "벤처캐피탈협회"
   },
   {
@@ -384,19 +397,6 @@
    "deadline": "",
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5173",
-   "first_seen": "2026-10-20",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
-   "source": "kvic",
-   "id": "5171",
-   "title": "2026년 글로벌 리그 펀드 출자사업 최종 선정결과",
-   "date": "2026-10-19",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5171",
    "first_seen": "2026-10-20",
    "is_new": false,
    "is_closed": false,
@@ -1118,6 +1118,19 @@
    "source_name": "교직원공제회"
   },
   {
+   "source": "kfcc",
+   "id": "436",
+   "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
+   "date": "2025-04-30",
+   "deadline": "2025-05-14",
+   "org": "",
+   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=436",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": true,
+   "source_name": "새마을금고중앙회"
+  },
+  {
    "source": "ktcu",
    "id": "57104",
    "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
@@ -1129,6 +1142,19 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "교직원공제회"
+  },
+  {
+   "source": "kfcc",
+   "id": "432",
+   "title": "2025년 새마을금고중앙회 국내지분증권 간접투자운용사 군 선정 공고문",
+   "date": "2025-03-12",
+   "deadline": "2025-03-20",
+   "org": "",
+   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=432",
+   "first_seen": "2026-06-29",
+   "is_new": false,
+   "is_closed": true,
+   "source_name": "새마을금고중앙회"
   },
   {
    "source": "nps",
