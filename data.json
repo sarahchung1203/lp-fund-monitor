@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-17 14:09 KST",
-  "today": "2026-11-17",
+  "generated_at": "2026-11-18 13:36 KST",
+  "today": "2026-11-18",
   "new_days": 3,
-  "total": 83,
+  "total": 81,
   "new_count": 1,
-  "closed_count": 19,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -34,7 +34,7 @@
    {
     "code": "kfcc",
     "name": "새마을금고중앙회",
-    "count": 2,
+    "count": 0,
     "ok": true,
     "error": "",
     "carried": 0
@@ -1118,19 +1118,6 @@
    "source_name": "교직원공제회"
   },
   {
-   "source": "kfcc",
-   "id": "436",
-   "title": "2025년 새마을금고중앙회 위탁펀드형 대체투자 운용사 선정 공고",
-   "date": "2025-04-30",
-   "deadline": "2025-05-14",
-   "org": "",
-   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=436",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "새마을금고중앙회"
-  },
-  {
    "source": "ktcu",
    "id": "57104",
    "title": "2025년 한국교직원공제회 블라인드 PEF 위탁운용사 선정 공고",
@@ -1142,19 +1129,6 @@
    "is_new": false,
    "is_closed": false,
    "source_name": "교직원공제회"
-  },
-  {
-   "source": "kfcc",
-   "id": "432",
-   "title": "2025년 새마을금고중앙회 국내지분증권 간접투자운용사 군 선정 공고문",
-   "date": "2025-03-12",
-   "deadline": "2025-03-20",
-   "org": "",
-   "url": "https://www.kfcc.co.kr/mgNotice/mgNoticeDetail.do?no=432",
-   "first_seen": "2026-06-29",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "새마을금고중앙회"
   },
   {
    "source": "nps",
