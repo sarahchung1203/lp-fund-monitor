@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-19 13:19 KST",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-20 13:06 KST",
+  "today": "2026-11-20",
   "new_days": 3,
   "total": 81,
-  "new_count": 1,
-  "closed_count": 17,
+  "new_count": 2,
+  "closed_count": 16,
   "sources": [
    {
     "code": "kvic",
@@ -91,6 +91,32 @@
  },
  "items": [
   {
+   "source": "kvca",
+   "id": "948",
+   "title": "「IBK 지역혁신 모펀드」 2026년 위탁운용사 선정계획 공고",
+   "date": "2026-11-20",
+   "deadline": "2026-12-07",
+   "org": "IBK자산운용",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=948",
+   "first_seen": "2026-11-20",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "벤처캐피탈협회"
+  },
+  {
+   "source": "kvic",
+   "id": "5241",
+   "title": "2026년 LP 성장펀드(Track 2) 2차 출자사업 선정 결과",
+   "date": "2026-11-19",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5241",
+   "first_seen": "2026-11-20",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
    "source": "kvic",
    "id": "5240",
    "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 접수현황",
@@ -99,7 +125,7 @@
    "org": "",
    "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5240",
    "first_seen": "2026-11-17",
-   "is_new": true,
+   "is_new": false,
    "is_closed": false,
    "source_name": "한국벤처투자(모태펀드)"
   },
@@ -390,19 +416,6 @@
    "source_name": "한국벤처투자(모태펀드)"
   },
   {
-   "source": "kvic",
-   "id": "5173",
-   "title": "2026년 해외VC 글로벌 펀드 출자사업 (3차) 접수 현황",
-   "date": "2026-10-19",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5173",
-   "first_seen": "2026-10-20",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1126",
    "title": "【접수현황】「IBK 생산적금융펀드 1호​」일반매칭 위탁운용사 접수 현황",
@@ -630,7 +643,7 @@
    "date": "2026-09-07",
    "deadline": "2026-09-22",
    "org": "하나벤처스",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=1&po_no=897",
+   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=897",
    "first_seen": "2026-09-07",
    "is_new": false,
    "is_closed": true,
@@ -944,19 +957,6 @@
    "org": "농업정책보험금융원",
    "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=871",
    "first_seen": "2026-07-15",
-   "is_new": false,
-   "is_closed": true,
-   "source_name": "벤처캐피탈협회"
-  },
-  {
-   "source": "kvca",
-   "id": "869",
-   "title": "2026년도 중소기업중앙회 국내 블라인드 펀드 선정 공고",
-   "date": "2026-07-10",
-   "deadline": "2026-07-31",
-   "org": "중소기업중앙회",
-   "url": "https://www.kvca.or.kr/Program/invest/listbody.html?a_gb=board&a_cd=8&a_item=0&sm=2_2_2&keyfield=&key=&page=2&po_no=869",
-   "first_seen": "2026-07-11",
    "is_new": false,
    "is_closed": true,
    "source_name": "벤처캐피탈협회"
