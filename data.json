@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-20 13:06 KST",
-  "today": "2026-11-20",
+  "generated_at": "2026-11-21 13:06 KST",
+  "today": "2026-11-21",
   "new_days": 3,
   "total": 81,
-  "new_count": 2,
-  "closed_count": 16,
+  "new_count": 4,
+  "closed_count": 17,
   "sources": [
    {
     "code": "kvic",
@@ -90,6 +90,32 @@
   ]
  },
  "items": [
+  {
+   "source": "kvic",
+   "id": "5242",
+   "title": "상생협력 모펀드 출자사업 계획 공고",
+   "date": "2026-11-20",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5242",
+   "first_seen": "2026-11-21",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국벤처투자(모태펀드)"
+  },
+  {
+   "source": "kgrowth",
+   "id": "1138",
+   "title": "【접수현황】(재공고)「성장사다리펀드2」 2026년(3차년도) 위탁운용사 접수 현황",
+   "date": "2026-11-20",
+   "deadline": "",
+   "org": "",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1138&str_type=1&tab=1",
+   "first_seen": "2026-11-21",
+   "is_new": true,
+   "is_closed": false,
+   "source_name": "한국성장금융"
+  },
   {
    "source": "kvca",
    "id": "948",
@@ -217,7 +243,7 @@
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1134&str_type=1&tab=1",
    "first_seen": "2026-11-10",
    "is_new": false,
-   "is_closed": false,
+   "is_closed": true,
    "source_name": "한국성장금융"
   },
   {
@@ -403,19 +429,6 @@
    "source_name": "금융투자협회(KOFIA)"
   },
   {
-   "source": "kvic",
-   "id": "5179",
-   "title": "2026년 LP 성장펀드(Track 2) 3차 출자사업 계획 공고",
-   "date": "2026-10-21",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice?id=5179",
-   "first_seen": "2026-10-22",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국벤처투자(모태펀드)"
-  },
-  {
    "source": "kgrowth",
    "id": "1126",
    "title": "【접수현황】「IBK 생산적금융펀드 1호​」일반매칭 위탁운용사 접수 현황",
@@ -539,7 +552,7 @@
    "date": "2026-09-18",
    "deadline": "",
    "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=1&search_colume=&search_text=&idx=1122&str_type=1&tab=1",
+   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1122&str_type=1&tab=1",
    "first_seen": "2026-09-19",
    "is_new": false,
    "is_closed": false,
@@ -723,19 +736,6 @@
    "org": "",
    "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1111&str_type=1&tab=1",
    "first_seen": "2026-08-26",
-   "is_new": false,
-   "is_closed": false,
-   "source_name": "한국성장금융"
-  },
-  {
-   "source": "kgrowth",
-   "id": "1109",
-   "title": "【접수현황】「무공해차 인프라펀드」위탁운용사 접수 현황",
-   "date": "2026-08-18",
-   "deadline": "",
-   "org": "",
-   "url": "https://www.kgrowth.or.kr/notice_view.asp?page=2&search_colume=&search_text=&idx=1109&str_type=1&tab=1",
-   "first_seen": "2026-08-19",
    "is_new": false,
    "is_closed": false,
    "source_name": "한국성장금융"
